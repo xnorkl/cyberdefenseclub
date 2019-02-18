@@ -1,0 +1,101 @@
+
+ss -at
+ss -atn
+sudo ufw deny 3306
+ss -au
+ip -a
+ip a
+ss | less
+ss -a tcp
+ss -A tcp
+ss -s
+ls -la
+sudo visudo
+cat /etc/group
+getent passwd
+getent passwd | grep -i nologin
+getent passwd | grep -v nologin
+getent passwd | cut -d: -f1
+getent | grep -v nologin | cut -d: -f1
+getent passwd | grep -v nologin | cut -d: -f1
+useradd --help
+useradd snor -g
+useradd snor -g wheel
+sudo useradd snor -g wheel
+sudo usermod -h
+sudo usermod -L root
+su 
+sudo su
+su --help
+sudo su --pty
+sudo su --pty
+su
+sudo su
+cut -d: -f1 /etc/group | sort
+groupadd wheel
+egrep "wheel" /etc/group
+egrep "admin
+egrep "admin|sudo|wheel" /etc/group
+who
+whoami 
+who | grep -v whoami
+echo whoami | grep -v | who
+who | grep -v | echo whoami
+egrep who
+who | grep -v xnor
+			egrep "admin|sudo|wheel" /etc/group
+ps -u xnor
+egrep "admin|sudo|wheel" /etc/group 
+sudo visudo
+su 
+sudo su 
+sudo passwd -l root
+sudo su
+su
+sudo passwd -u root
+sudo useradd -aG wheel adam
+sudo useradd -g wheel adam
+passwd adam
+sudo passwd adam
+sudo vi /etc/pam.d/su
+sudo groupadd -r ssh
+gpasswd -a xnor ssh
+sudo gpasswd -a xnor ssh
+echo 'AllowGroups ssh'>> /etc/ssh/sshd_config
+sudo echo 'AllowGroups ssh'>> /etc/ssh/sshd_config
+sudo su
+sudo systemctl restart sshd.service
+for g in power network ;do ;gpasswd -a xnor $g ;done
+sudo for g in power network ;do ;gpasswd -a xnor $g ;done
+sudo su
+groups 
+groups adam
+sudo -i -u adam
+sudo usermod -d /home/adam -m adam
+sudo -i -u adam
+sudo /etc/groups
+sudo vim /etc/groups
+sudo vim /etc/group
+sudo vim /etc/passwd
+sudo -i -u adam
+sudo useradd -m adam
+chown adam:adam /home/adam
+cd /home/adam
+cd /home
+ls
+sudo passwd -Sa
+egrep "admin|sudo|wheel" /etc/group 
+egrep "adm|sudo|wheel" /etc/group 
+getent passwd daemon
+pkill -KILL -u snor
+sudo pkill -KILL -u snor
+usermod _l root
+usermod -L root
+sudo su -
+sudo userdel snor
+sudo userdel adam
+ls
+egrep "adm|sudo|wheel" /etc/group 
+sudo vim /etc/shells
+sudo useradd -m -G wheel -s /bin/zsh adam
+sudo -i u
