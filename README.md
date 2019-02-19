@@ -51,7 +51,7 @@ D --> A
 
 
 
-## Inject
+## Injects
 
 Injects are most often tasks associated with system administration.
 Along with maintaining fundamental services, injects take priority.
@@ -128,11 +128,10 @@ Limit processes run by users
 
 	
 
-## Enumerate
+## Enumeration
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
 
-## Hunt
+## Hunting
 
 **Windows Team**
 
@@ -155,6 +154,6 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTA4MDE3NDYsMTQ5MzgwMTg2OCwxNz
-Q2MTMxMzJdfQ==
+eyJoaXN0b3J5IjpbMTU4OTU2NDE2MywxNDkzODAxODY4LDE3ND
+YxMzEzMl19
 -->
