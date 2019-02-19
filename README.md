@@ -70,12 +70,20 @@ This initial step breaks down neatly into three smaller, consecutive steps:
 ### Network Admin 
 
 ### Windows Team
+&nbsp;&nbsp;1. Change Default Credentials
+&nbsp;&nbsp;2. Create an Admin Account
+&nbsp;&nbsp;3. Restrict Login Access  
+
 log successful and failed logins
 ```powershell
 auditpol.exe /set /category:"Logon/Logoff"  /success:enable /failure:enable | out-null
 ```
 
 ### Linux Team
+&nbsp;&nbsp;1. Change Default Credentials
+&nbsp;&nbsp;2. Create an Admin Account
+&nbsp;&nbsp;3. Restrict Login Access  
+
 **Adding an Administrator Account**
 ```bash
 #Change default password for default login
@@ -161,6 +169,6 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NDExNjExLDIyMDQ2NDYyOSwxNDkzOD
-AxODY4LDE3NDYxMzEzMl19
+eyJoaXN0b3J5IjpbLTEyMTkzMzU1NzUsMjIwNDY0NjI5LDE0OT
+M4MDE4NjgsMTc0NjEzMTMyXX0=
 -->
