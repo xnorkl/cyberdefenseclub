@@ -95,29 +95,28 @@ sudo -i -u <admin>
 sudo passwd -l root
 #Always use sudo -i -u <admin> when performing admin tasks!
 ```
-
 **Administrating the Wheel Group**
-To check if the wheel group exists you can simply run:
+
+Add the wheel group if it doesn't already exist. 
+Restrict the use of sudo to the wheel group by configuring **/etc/sudoers**. Use visudo and uncomment the following: 
 ```bash
-groupadd wheel
+wheel ALL=(ALL) ALL  
 ```
-Restrict the use of sudo to the wheel group by configuring /etc/sudoers and uncomment the following:
-```bash  
-visudo
-#%wheel ALL=(ALL) ALL  
-```
-Restricts use of su with PAM, located at /etc/pam.d/su by uncommenting or adding the following line:
+Restrict use of su with pam. 
+Uncomment or add the following line to **/etc/pam.d/su**:
 ```bash
 auth		requirement	pam_wheel.so group=wheel
 ```
 **User Administration**
+Set a delay upon authentication failure
+Lock out a user after 3 repeated failed attempts
 ```bash
 /etc/pam.d/system-login
 
 auth optional pam_faildelay.so delay=4000000
 auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/tallylog
 ```
-
+Limit processes run by users
 ```bash
 /etc/security/limits.conf
 
@@ -151,5 +150,5 @@ You can rename the current file by clicking the file name in the navigation bar 
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MjM3MjUzMV19
+eyJoaXN0b3J5IjpbMTc0NjEzMTMyXX0=
 -->
