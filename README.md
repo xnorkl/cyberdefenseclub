@@ -19,7 +19,7 @@ meaning each year team composition should change to meet the challenges presente
 ## Scoring
 
 ## Team Composition
-Our team composition this year is a close mapping of the enterprise architecture, with Captain and Technical Lead designated to carry out tasking injections to any of three teams: Windows, Unix, and Firewall administration.
+Our team composition this year is a close mapping of the enterprise architecture, with Captain and Change Control Officer designated to carry out tasking injections to any of three teams: Windows, Unix, and Firewall administration.
  
  ```mermaid
 graph LR
@@ -160,6 +160,6 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0Nj
-EzMTMyXX0=
+eyJoaXN0b3J5IjpbNjIwOTk4MTYxLDIyMDQ2NDYyOSwxNDkzOD
+AxODY4LDE3NDYxMzEzMl19
 -->
