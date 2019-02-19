@@ -139,12 +139,12 @@ Limit processes run by users
 ### Linux Team
 
 #### File Permissions
-                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 
+|              |ASCII                          |HTML                         |
+|----------------|-------------------------------|-----------------------------|
+|Owner|`'Isn't this fun?'`            |'Isn't this fun?'            |
+|Group          |`"Isn't this fun?"`            |"Isn't this fun?"            |
+|Other          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 **chmod**
 ```bash
 #
@@ -160,6 +160,6 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MTU4Mjg0MywxNDkzODAxODY4LDE3ND
-YxMzEzMl19
+eyJoaXN0b3J5IjpbMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0Nj
+EzMTMyXX0=
 -->
