@@ -60,7 +60,7 @@ It is each team's responsibility to properly resolve an inject tasked by the Cap
 
 ## Hardening
 There should be no injects given within the first 15 minutes. 
-Hardening each and every device under your purview is the first objective that should be taken.  
+Hardening each and every device under your purview is the first step that should be taken towards securing a system.  
  
 1. Change Default Credentials
 2. Create an Admin Account
@@ -160,6 +160,6 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIwOTk4MTYxLDIyMDQ2NDYyOSwxNDkzOD
-AxODY4LDE3NDYxMzEzMl19
+eyJoaXN0b3J5IjpbLTQ1MDY3ODcyNCwyMjA0NjQ2MjksMTQ5Mz
+gwMTg2OCwxNzQ2MTMxMzJdfQ==
 -->
