@@ -123,14 +123,7 @@ Limit processes run by users
 * soft nproc 100
 * hard nproc 200
 ```
-**File Permissions**
-**chmod**
-```bash
-#
-chmod 0077 /boot /etc/{iptables,artptables}
-```
 
-**chown**
 
 
 	
@@ -145,11 +138,23 @@ You can rename the current file by clicking the file name in the navigation bar 
 
 
 **Linux Team**
+
+**File Permissions**
+**chmod**
+```bash
+#
+chmod 0077 /boot /etc/{iptables,artptables}
+```
+
+**chown**
+
+
 |                |ASCII                          |HTML                         |
 |----------------|-------------------------------|-----------------------------|
 |Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ==
+eyJoaXN0b3J5IjpbLTEyOTA4MDE3NDYsMTQ5MzgwMTg2OCwxNz
+Q2MTMxMzJdfQ==
 -->
