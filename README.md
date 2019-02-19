@@ -124,12 +124,13 @@ Limit processes run by users
 * hard nproc 200
 ```
 **File Permissions**
-**umask**
-
+**chmod**
 ```bash
+#
 chmod 0077 /boot /etc/{iptables,artptables}
 ```
 
+**chown**
 
 
 	
@@ -150,5 +151,5 @@ You can rename the current file by clicking the file name in the navigation bar 
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NjEzMTMyXX0=
+eyJoaXN0b3J5IjpbMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ==
 -->
