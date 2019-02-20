@@ -107,8 +107,6 @@ sudo -i -u <admin>
 sudo passwd -l root 
 ```
 **Always use sudo -i -u <admin> when performing admin tasks!*
-```
-<span style="color:red">some **This is Red Bold.** text</span>
 
 &nbsp;&nbsp;3. Restrict Login Access  
 
@@ -179,6 +177,6 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMTQyODUxNiwxNzMzNDgzMzcyLC0xMj
-E5MzM1NTc1LDIyMDQ2NDYyOV19
+eyJoaXN0b3J5IjpbLTE1OTc0NTg1OTQsMTczMzQ4MzM3MiwtMT
+IxOTMzNTU3NSwyMjA0NjQ2MjldfQ==
 -->
