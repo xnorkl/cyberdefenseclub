@@ -102,7 +102,7 @@ usermod -d ~/home/<newname> -m <newname>
 # symlink $HOME 
 ln -s ~/home/<newname> ~/home/<oldname> 
 ```
-&nbsp;2. add an admin to the wheel group
+&nbsp;2. administrate 
 
 *add the wheel group if it doesn't already exist!* 
 Restrict the use of sudo to the wheel group by configuring **/etc/sudoers**. 
@@ -200,7 +200,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMDM0MzIzMiwxMzQ0OTI5NjA2LC04OD
-Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
-NTU3NSwyMjA0NjQ2MjldfQ==
+eyJoaXN0b3J5IjpbLTEwODQ5MDIwNDIsMTM0NDkyOTYwNiwtOD
+g2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkz
+MzU1NzUsMjIwNDY0NjI5XX0=
 -->
