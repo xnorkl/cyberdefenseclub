@@ -84,7 +84,7 @@ auditpol.exe /set /category:"Logon/Logoff"  /success:enable /failure:enable | ou
 ```
 
 ### - Linux Team
-&nbsp;&nbsp;**1. change default user credentials**
+&nbsp;**1. change default user credentials**
 ```bash
 # change default password for default login
 passwd
@@ -96,7 +96,7 @@ usermod -d ~/home/<newname> -m <newname>
 # symlink $HOME 
 ln -s ~/home/<newname> ~/home/<oldname> 
 ```
-&nbsp;&nbsp;**2. add an admin user to the wheel group and lock root**
+&nbsp;**2. add an admin user to the wheel group and lock root**
 ```bash
 # while root create an admin account
 useradd -mg wheel <admin>
@@ -109,7 +109,10 @@ sudo chown <admin>:wheel /bin/su
 ```
 **Always use sudo -i -u admin when performing admin tasks!*
 
-&nbsp;&nbsp;**3. Restrict Login Access**  
+&nbsp;**3. Restrict Login Access**  
+```bash
+# 
+```
 
 
 
@@ -178,7 +181,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDQxMzg3MDYsLTg4NjcyODM5NCwtMT
+eyJoaXN0b3J5IjpbLTExNzE2MTExNjEsLTg4NjcyODM5NCwtMT
 EyNjMwMTA2NCwxNzMzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2
 NDYyOV19
 -->
