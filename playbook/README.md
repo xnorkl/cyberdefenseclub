@@ -166,7 +166,7 @@ auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/t
 
 #### File Permissions
 
-|              |ASCII                          |HTML                         |
+|              |                          |HTML                         |
 |----------------|-------------------------------|-----------------------------|
 |Owner|`'Isn't this fun?'`            |'Isn't this fun?'            |
 |Group          |`"Isn't this fun?"`            |"Isn't this fun?"            |
@@ -186,7 +186,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI5MTM5NTc2LDE0NTI0NjQzMjQsMTM0ND
-kyOTYwNiwtODg2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMz
-NzIsLTEyMTkzMzU1NzUsMjIwNDY0NjI5XX0=
+eyJoaXN0b3J5IjpbLTE3MjU1MjEwMDEsMTQ1MjQ2NDMyNCwxMz
+Q0OTI5NjA2LC04ODY3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4
+MzM3MiwtMTIxOTMzNTU3NSwyMjA0NjQ2MjldfQ==
 -->
