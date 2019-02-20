@@ -133,21 +133,8 @@ auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/t
 * soft nproc 100
 * hard nproc 200
 ```
-
-
-
 **Administrating the Wheel Group**
 
-Add the wheel group if it doesn't already exist. 
-Restrict the use of sudo to the wheel group by configuring **/etc/sudoers**. Use visudo and uncomment the following: 
-```bash
-wheel ALL=(ALL) ALL  
-```
-Restrict use of su with pam. 
-Uncomment or add the following line to **/etc/pam.d/su**:
-```bash
-auth		requirement	pam_wheel.so group=wheel
-```
 **User Administration**
 Set a delay upon authentication failure
 Lock out a user after 3 repeated failed attempts
@@ -201,7 +188,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NjUzMjU2MCwxMzQ0OTI5NjA2LC04OD
+eyJoaXN0b3J5IjpbMTgyNjY4NzU4MCwxMzQ0OTI5NjA2LC04OD
 Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
 NTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ
 ==
