@@ -49,8 +49,8 @@ B --> C(2. Harden)
 C --> D(3. Enumerate)
 D --> E(4. Hunt)
 A --> C
-C 
 E --> A
+E -->F(0. 
 ```
 
 ## Injects
@@ -183,7 +183,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjA1MDM3OTMsMTM0NDkyOTYwNiwtOD
+eyJoaXN0b3J5IjpbLTEwMTYwMDU4MzksMTM0NDkyOTYwNiwtOD
 g2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkz
 MzU1NzUsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMyXX
 0=
