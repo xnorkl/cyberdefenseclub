@@ -155,7 +155,13 @@ auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/t
 * hard nproc 200
 ```
 ## Enumeration
+**nmap**
 
+**ss**
+
+**ps**
+
+**pstree**
 
 ## Hunting
 
@@ -179,14 +185,11 @@ chmod 0077 /boot /etc/{iptables,artptables}
 
 **chown**
 
+**kill**
 
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
+**find**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NDI1MDYwNSwxNDUyNDY0MzI0LDEzND
-Q5Mjk2MDYsLTg4NjcyODM5NCwtMTEyNjMwMTA2NCwxNzMzNDgz
-MzcyLC0xMjE5MzM1NTc1LDIyMDQ2NDYyOV19
+eyJoaXN0b3J5IjpbLTEzODMzMDQyNjgsMTQ1MjQ2NDMyNCwxMz
+Q0OTI5NjA2LC04ODY3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4
+MzM3MiwtMTIxOTMzNTU3NSwyMjA0NjQ2MjldfQ==
 -->
