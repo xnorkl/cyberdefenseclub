@@ -176,6 +176,10 @@ auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/t
 * hard nproc 200
 ```
 ## Enumeration
+### Firewall
+### Windows
+### Linux 
+
 **nmap**
 
 **ss**
@@ -183,6 +187,7 @@ auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/t
 **ps**
 
 **pstree**
+
 #### Maintaining Services
 ##### systemctl
 ```bash
@@ -273,7 +278,7 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMjE3NTEwNCwtMTgwNDQ4NzE3NSwxOD
+eyJoaXN0b3J5IjpbMjA5ODk5MjE0NiwtMTgwNDQ4NzE3NSwxOD
 M0NzA0OTY3LDExOTAxMjk1OTEsMTcwMjU3OTc2MiwxNDUyNDY0
 MzI0LDEzNDQ5Mjk2MDYsLTg4NjcyODM5NCwtMTEyNjMwMTA2NC
 wxNzMzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2NDYyOV19
