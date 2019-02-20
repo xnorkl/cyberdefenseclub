@@ -108,7 +108,7 @@ sudo passwd -l root
 ```
 **Always use sudo -i -u admin when performing admin tasks!*
 
-&nbsp;&nbsp;3. Restrict Login Access  
+&nbsp;&nbsp;**3. Restrict Login Access**  
 
 
 
@@ -177,6 +177,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NjcyODM5NCwtMTEyNjMwMTA2NCwxNz
-MzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2NDYyOV19
+eyJoaXN0b3J5IjpbLTExNTMwOTE5MTQsLTg4NjcyODM5NCwtMT
+EyNjMwMTA2NCwxNzMzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2
+NDYyOV19
 -->
