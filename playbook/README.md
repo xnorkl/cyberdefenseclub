@@ -90,6 +90,7 @@ auditpol.exe /set /category:"Logon/Logoff"  /success:enable /failure:enable | ou
 ```
 
 #### - Linux Team
+
 &nbsp;1. change default user credentials
 ```bash
 # change default password for default login
@@ -108,8 +109,8 @@ ln -s ~/home/<newname> ~/home/<oldname>
 ```bash
 groupadd wheel
 ```
-Restrict the use of sudo to the wheel group by configuring **/etc/sudoers**. 
-Use visudo and uncomment the following: 
+*Restrict the use of sudo to the wheel group by configuring **/etc/sudoers**.*
+*Use visudo and uncomment the following:*
 ```bash
 wheel ALL=(ALL) ALL  
 ```
@@ -203,7 +204,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDk1MTgxOTEsMTM0NDkyOTYwNiwtOD
-g2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkz
-MzU1NzUsMjIwNDY0NjI5XX0=
+eyJoaXN0b3J5IjpbLTg0MjgwMjYzNSwxMzQ0OTI5NjA2LC04OD
+Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
+NTU3NSwyMjA0NjQ2MjldfQ==
 -->
