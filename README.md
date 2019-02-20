@@ -63,7 +63,7 @@ There should be no injects given within the first 15 minutes.Hardening each and 
 
 This initial step breaks down neatly into three smaller, consecutive steps:
   	
-&nbsp;&nbsp;1. Secure Credentials
+&nbsp;&nbsp;1. Retire old credentials
 &nbsp;&nbsp;2. 
 &nbsp;&nbsp;3. Restrict Login Access  
 
@@ -169,6 +169,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMzQ4MzM3MiwtMTIxOTMzNTU3NSwyMj
-A0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ==
+eyJoaXN0b3J5IjpbMjU0NDkyNzkxLDE3MzM0ODMzNzIsLTEyMT
+kzMzU1NzUsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMy
+XX0=
 -->
