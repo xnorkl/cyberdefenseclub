@@ -149,8 +149,6 @@ auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/t
 * soft nproc 100
 * hard nproc 200
 ```
-**Administrating the Wheel Group**
-
 **User Administration**
 Set a delay upon authentication failure
 Lock out a user after 3 repeated failed attempts
@@ -204,8 +202,8 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODU1ODk1NjcsMTM0NDkyOTYwNiwtOD
-g2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkz
-MzU1NzUsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMyXX
-0=
+eyJoaXN0b3J5IjpbMTkwODcwNTYyNiwxMzQ0OTI5NjA2LC04OD
+Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
+NTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ
+==
 -->
