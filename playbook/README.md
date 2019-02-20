@@ -102,7 +102,19 @@ usermod -d ~/home/<newname> -m <newname>
 # symlink $HOME 
 ln -s ~/home/<newname> ~/home/<oldname> 
 ```
-&nbsp;2. add an admin user to the wheel group and lock root
+&nbsp;2. add an admin to the wheel group
+
+*add the wheel group if it doesn't already exist!* 
+Restrict the use of sudo to the wheel group by configuring **/etc/sudoers**. 
+Use visudo and uncomment the following: 
+```bash
+wheel ALL=(ALL) ALL  
+```
+Restrict use of su with pam. 
+Uncomment or add the following line to **/etc/pam.d/su**:
+```bash
+auth		requirement	pam_wheel.so group=wheel
+```
 ```bash
 # while root create an admin account
 useradd -mg wheel <admin>
@@ -188,7 +200,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNjY4NzU4MCwxMzQ0OTI5NjA2LC04OD
+eyJoaXN0b3J5IjpbMTIwMDM0MzIzMiwxMzQ0OTI5NjA2LC04OD
 Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
 NTU3NSwyMjA0NjQ2MjldfQ==
 -->
