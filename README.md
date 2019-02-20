@@ -43,12 +43,15 @@ If an inject does not directly deal with a service or device under your team's p
  
  ```mermaid
 graph LR
-A(0. Inject) --> B(1. Harden)
+
+A --> B(1. Harden)
 B --> C(2. Enumate)
 C --> D(3. Hunt)
 B --> A
 C --> A
 D --> A
+A(0. Inject) --> E(1. Initial Harden)
+E --> A
 ```
 
 
@@ -183,7 +186,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTA2MTE2MDUsLTg4NjcyODM5NCwtMT
-EyNjMwMTA2NCwxNzMzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2
-NDYyOSwxNDkzODAxODY4LDE3NDYxMzEzMl19
+eyJoaXN0b3J5IjpbODQ3ODkwMDY5LC04ODY3MjgzOTQsLTExMj
+YzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMzNTU3NSwyMjA0NjQ2
+MjksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ==
 -->
