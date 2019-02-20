@@ -47,17 +47,11 @@ graph LR
 A(0. Inject) --> B(1. Initial Hardening)
 B --> C(2. Harden)
 C --> D(3. Enumerate)
-D --> E(
+D --> E(4. Hunt)
+A --> C
 
-
+E --> A
 ```
-
-C --> B(2. Harden)
-B --> C(3. Enumate)
-C --> D(4. Hunt)
-B --> A
-C --> A
-D --> A
 
 ## Injects
 
@@ -189,7 +183,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzc5NTU2NjcsMTM0NDkyOTYwNiwtOD
-g2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkz
-MzU1NzUsMjIwNDY0NjI5XX0=
+eyJoaXN0b3J5IjpbMTcwMDg4NDY5MCwxMzQ0OTI5NjA2LC04OD
+Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
+NTU3NSwyMjA0NjQ2MjldfQ==
 -->
