@@ -41,9 +41,7 @@ This is a team competition, where coordination and communication are imperative 
 - Injects correspond to tasks received by the Captain. The entire team is responsible for completing each inject.
 - Incidents correspond to primary services taken down by the red team or *otherwise* 
 
-To successfully balance inject completion, incident resolution all while maintaining or improving a security pos
-
-If an inject does not directly deal with a service or device under your team's purview or if there are no current injects at all, move to hardening, then enumeration. Rinse and repeat.
+To successfully balance inject completion, incident resolution all while maintaining or improving a security posture, refer to this work flow:
  
  ```mermaid
 graph LR
@@ -189,8 +187,8 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MTg2NTEwNSwxMzQ0OTI5NjA2LC04OD
-Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
-NTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ
-==
+eyJoaXN0b3J5IjpbLTE5OTE3NzYxMTIsMTM0NDkyOTYwNiwtOD
+g2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkz
+MzU1NzUsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMyXX
+0=
 -->
