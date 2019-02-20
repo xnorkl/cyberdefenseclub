@@ -105,22 +105,22 @@ ln -s ~/home/<newname> ~/home/<oldname>
 ```
 &nbsp;2. configure wheel and add an admin
 
-*add the wheel group if it doesn't already exist!* 
+*add the **wheel** group if it doesn't already exist!* 
 ```bash
 groupadd wheel
 ```
 *Restrict the use of sudo to the wheel group by configuring **/etc/sudoers**.*
-*Use visudo and uncomment the following:*
+*Use **visudo** and uncomment the following:*
 ```bash
 wheel ALL=(ALL) ALL  
 ```
-Restrict use of su with pam. 
-Uncomment or add the following line to **/etc/pam.d/su**:
+*Restrict use of su with pam.*
+*Uncomment or add the following line to **/etc/pam.d/su**:*
 ```bash
 auth		requirement	pam_wheel.so group=wheel
 ```
+*while root create an admin account:*
 ```bash
-# while root create an admin account
 useradd -mg wheel <admin>
 passwd <admin> 
 exit
@@ -129,7 +129,7 @@ sudo -i -u <admin>
 sudo passwd -l root 
 sudo chown <admin>:wheel /bin/su
 ```
-**Always use sudo -i -u admin when performing admin tasks!*
+##### *Always use sudo -i -u admin when performing admin tasks!*
 
 &nbsp; 3. Restrict Login Access  
 
@@ -204,8 +204,8 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MjgwMjYzNSwxMzQ0OTI5NjA2LC04OD
-Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
-NTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ
-==
+eyJoaXN0b3J5IjpbLTEwODU1ODk1NjcsMTM0NDkyOTYwNiwtOD
+g2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkz
+MzU1NzUsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMyXX
+0=
 -->
