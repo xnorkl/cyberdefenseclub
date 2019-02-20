@@ -67,7 +67,12 @@ Each team is responsible for:
 ## Incidents
 The entire team is responsible for maintaining fundamental services:
 - http
--
+- https
+- Webmail-HTTP
+- SMTP
+- POP3
+- DNS
+
 Each team is responsible maintaining the services under their purview.
 
 ## Hardening
@@ -195,7 +200,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 
 **find**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjU4ODI1ODUsMTQ1MjQ2NDMyNCwxMz
+eyJoaXN0b3J5IjpbLTEzNDQ2OTYxMjMsMTQ1MjQ2NDMyNCwxMz
 Q0OTI5NjA2LC04ODY3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4
 MzM3MiwtMTIxOTMzNTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OC
 wxNzQ2MTMxMzJdfQ==
