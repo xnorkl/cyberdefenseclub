@@ -45,13 +45,19 @@ If an inject does not directly deal with a service or device under your team's p
 graph LR
 
 A(0. Inject) --> B(1. Initial Hardening)
-B --> C(2. Incident Response)
-C --> D(3. Harden)
-D -->
+B --> C(2. Harden)
+C --> D(3. Enumerate)
+D --> E(4
+
 
 ```
 
-
+C --> B(2. Harden)
+B --> C(3. Enumate)
+C --> D(4. Hunt)
+B --> A
+C --> A
+D --> A
 
 ## Injects
 
@@ -183,8 +189,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODIxMTQ5MzIsMTM0NDkyOTYwNiwtOD
-g2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkz
-MzU1NzUsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMyXX
-0=
+eyJoaXN0b3J5IjpbMzU2NzEwOTQ5LDEzNDQ5Mjk2MDYsLTg4Nj
+cyODM5NCwtMTEyNjMwMTA2NCwxNzMzNDgzMzcyLC0xMjE5MzM1
+NTc1LDIyMDQ2NDYyOSwxNDkzODAxODY4LDE3NDYxMzEzMl19
 -->
