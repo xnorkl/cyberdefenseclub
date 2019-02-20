@@ -89,7 +89,7 @@ auditpol.exe /set /category:"Logon/Logoff"  /success:enable /failure:enable | ou
 # change default password for default login
 passwd 
 ```
-&nbsp;&nbsp;**2. Create an Admin Account**
+&nbsp;&nbsp;**2. Create an Admin Account using the WHeel**
 ```bash
 # open a root shell and change root password
 su 
@@ -106,7 +106,7 @@ exit
 sudo -i -u <admin>
 sudo passwd -l root 
 ```
-**Always use sudo -i -u <admin> when performing admin tasks!*
+**Always use sudo -i -u admin when performing admin tasks!*
 
 &nbsp;&nbsp;3. Restrict Login Access  
 
@@ -177,7 +177,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTc0NTg1OTQsMTczMzQ4MzM3MiwtMT
-IxOTMzNTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2MTMx
-MzJdfQ==
+eyJoaXN0b3J5IjpbODY0NjAwNTk0LDE3MzM0ODMzNzIsLTEyMT
+kzMzU1NzUsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMy
+XX0=
 -->
