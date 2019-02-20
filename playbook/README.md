@@ -99,7 +99,7 @@ ln -s ~/home/<newname> ~/home/<oldname>
 ```
 &nbsp;&nbsp;**2. add an admin user to the wheel group and lock root**
 ```bash
-# while create an admin account
+# while root create an admin account
 useradd -mg wheel <admin>
 passwd <admin> 
 exit
@@ -178,6 +178,6 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjE3NTE4MzgsMTczMzQ4MzM3MiwtMT
+eyJoaXN0b3J5IjpbLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMT
 IxOTMzNTU3NSwyMjA0NjQ2MjldfQ==
 -->
