@@ -46,6 +46,8 @@ graph LR
 A(0. Inject) --> B(1. Harden)
 B --> C(2. Enumate)
 C --> D(3. Hunt)
+B --> A
+C --> A
 D --> A
 ```
 
@@ -60,13 +62,6 @@ It is each team's responsibility to properly resolve an inject tasked by the Cap
 
 ## Hardening
 There should be no injects given within the first 15 minutes. Hardening each and every device under your purview is the first step that should be taken towards securing a system. Since hardening a system is never completely finished, break hardening up into an initial step and a recurrent process. 
-
- ```mermaid
-graph LR
-A(Initial) --> B(Harden)
-B --> B
-```
-
 
 The initial step breaks down neatly into three smaller, consecutive steps:
   	
@@ -188,7 +183,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1OTUzNjc5NiwtODg2NzI4Mzk0LC0xMT
-I2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkzMzU1NzUsMjIwNDY0
-NjI5XX0=
+eyJoaXN0b3J5IjpbLTEwNTA2MTE2MDUsLTg4NjcyODM5NCwtMT
+EyNjMwMTA2NCwxNzMzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2
+NDYyOV19
 -->
