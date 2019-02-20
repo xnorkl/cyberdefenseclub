@@ -67,7 +67,8 @@ Each team is responsible for:
 ## Hardening
 There should be no injects given within the first 15 minutes. Hardening each and every device under your purview is the first step that should be taken towards securing a system. Since hardening a system is never completely finished, break hardening up into an initial step and a recurrent process. 
 
-The initial step breaks down neatly into three smaller, consecutive steps  	
+The initial step breaks down neatly into three smaller, consecutive steps:
+
 &nbsp;&nbsp;1. new user passwords
 &nbsp;&nbsp;2. configure admin accounts
 &nbsp;&nbsp;3. access rights 
@@ -76,13 +77,17 @@ The initial step breaks down neatly into three smaller, consecutive steps
 
 #### - Network Admin 
 &nbsp;&nbsp;1. Change Default Credentials
+
 &nbsp;&nbsp;2. Harden Admin Account
+
 &nbsp;&nbsp;3. Define Firewall Rules   
 
 #### - Windows Team
-&nbsp;&nbsp;**1. Change Default Credentials**
-&nbsp;&nbsp;**2. Create an Admin Account**
-&nbsp;&nbsp;**3. Restrict Login Access**  
+&nbsp;&nbsp;1. Change Default Credentials
+
+&nbsp;&nbsp;2. Create an Admin Account
+
+&nbsp;&nbsp;3. Restrict Login Access
 
 log successful and failed logins
 ```powershell
@@ -181,7 +186,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MjQ2NDMyNCwxMzQ0OTI5NjA2LC04OD
-Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
-NTU3NSwyMjA0NjQ2MjldfQ==
+eyJoaXN0b3J5IjpbNDI5MTM5NTc2LDE0NTI0NjQzMjQsMTM0ND
+kyOTYwNiwtODg2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMz
+NzIsLTEyMTkzMzU1NzUsMjIwNDY0NjI5XX0=
 -->
