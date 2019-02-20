@@ -226,12 +226,14 @@ systemctl stop <status>
 systemctl enable <service>
 systemctl disable <service>
 ```
-##### 
+##### journalctl
+```bash
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDQ0ODcxNzUsMTgzNDcwNDk2NywxMT
-kwMTI5NTkxLDE3MDI1Nzk3NjIsMTQ1MjQ2NDMyNCwxMzQ0OTI5
-NjA2LC04ODY3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3Mi
-wtMTIxOTMzNTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2
-MTMxMzJdfQ==
+eyJoaXN0b3J5IjpbMTEwMDg0Nzg4MSwtMTgwNDQ4NzE3NSwxOD
+M0NzA0OTY3LDExOTAxMjk1OTEsMTcwMjU3OTc2MiwxNDUyNDY0
+MzI0LDEzNDQ5Mjk2MDYsLTg4NjcyODM5NCwtMTEyNjMwMTA2NC
+wxNzMzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2NDYyOSwxNDkz
+ODAxODY4LDE3NDYxMzEzMl19
 -->
