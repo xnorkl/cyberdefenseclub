@@ -46,15 +46,14 @@ To successfully balance inject completion, incident resolution all while maintai
  ```mermaid
 graph LR
 
-A(Inject) --> B(Initial Hardening)
+A(Inject Completion) --> B(Initial Hardening)
 B --> C(Harden)
 C --> D(Enumerate)
 D --> E(Hunt)
 A --> C
 E --> A
-A --> F(Incident)
+A --> F(Incident Resoultion)
 F --> C
-
 ```
 
 ## Injects
@@ -187,8 +186,8 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTE3NzYxMTIsMTM0NDkyOTYwNiwtOD
-g2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkz
-MzU1NzUsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMyXX
-0=
+eyJoaXN0b3J5IjpbMTUyMjY1OTQxNiwxMzQ0OTI5NjA2LC04OD
+Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
+NTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ
+==
 -->
