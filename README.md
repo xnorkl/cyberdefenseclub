@@ -226,10 +226,10 @@ systemctl stop <status>
 systemctl enable <service>
 systemctl disable <service>
 ```
-
+##### 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTc1NDA4MTAsMTgzNDcwNDk2NywxMT
+eyJoaXN0b3J5IjpbLTE4MDQ0ODcxNzUsMTgzNDcwNDk2NywxMT
 kwMTI5NTkxLDE3MDI1Nzk3NjIsMTQ1MjQ2NDMyNCwxMzQ0OTI5
 NjA2LC04ODY3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3Mi
 wtMTIxOTMzNTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2
