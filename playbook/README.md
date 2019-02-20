@@ -68,9 +68,12 @@ This initial step breaks down neatly into three smaller, consecutive steps:
 &nbsp;&nbsp;3. access rights 
 **These steps differ slightly per team.*
 
-### Network Admin 
+### - Network Admin 
+&nbsp;&nbsp;1. Change Default Credentials
+&nbsp;&nbsp;2. Harden Admin Account
+&nbsp;&nbsp;3. Configure   
 
-### Windows Team
+### - Windows Team
 &nbsp;&nbsp;1. Change Default Credentials
 &nbsp;&nbsp;2. Create an Admin Account
 &nbsp;&nbsp;3. Restrict Login Access  
@@ -80,7 +83,7 @@ log successful and failed logins
 auditpol.exe /set /category:"Logon/Logoff"  /success:enable /failure:enable | out-null
 ```
 
-### Linux Team
+### - Linux Team
 &nbsp;&nbsp;1. Change Default Credentials
 &nbsp;&nbsp;2. Create an Admin Account
 &nbsp;&nbsp;3. Restrict Login Access  
@@ -170,6 +173,6 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NTg3OTEyOSwxNzMzNDgzMzcyLC0xMj
-E5MzM1NTc1LDIyMDQ2NDYyOV19
+eyJoaXN0b3J5IjpbLTEwODcwNTc3NjksMTczMzQ4MzM3MiwtMT
+IxOTMzNTU3NSwyMjA0NjQ2MjldfQ==
 -->
