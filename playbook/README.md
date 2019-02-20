@@ -39,7 +39,9 @@ This is a team competition, where coordination and communication are imperative 
 ## The Game Plan
 **Injects** and **Incidents** are prioritized.
 - Injects correspond to tasks received by the Captain. The entire team is responsible for completing each inject.
-- Incidents correspond to services taken down by the red team or *otherwise* 
+- Incidents correspond to primary services taken down by the red team or *otherwise* 
+
+To successfully balance inject completion, incident resolution all while maintaining or improving a secu
 
 If an inject does not directly deal with a service or device under your team's purview or if there are no current injects at all, move to hardening, then enumeration. Rinse and repeat.
  
@@ -187,7 +189,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NzI3MjA0NiwxMzQ0OTI5NjA2LC04OD
+eyJoaXN0b3J5IjpbMTg2NjIyOTQ0MSwxMzQ0OTI5NjA2LC04OD
 Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
 NTU3NSwyMjA0NjQ2MjldfQ==
 -->
