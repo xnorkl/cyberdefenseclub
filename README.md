@@ -42,16 +42,17 @@ The entire team is responsible for completing each inject.
 If an inject does not directly deal with a service or device under your team's purview or if there are no current injects at all, move to hardening, then enumeration, then hunt. Rinse and repeat.
  
  ```mermaid
-graph LR
+graph TD
 
-A --> B(1. Harden)
-B --> C(2. Enumate)
-C --> D(3. Hunt)
+A --> B(2. Harden)
+B --> C(3. Enumate)
+C --> D(4. Hunt)
 B --> A
 C --> A
 D --> A
-A(0. Inject) --> E(1. Initial Harden)
 E --> A
+A(0. Inject) --> E(1. Initial Harden)
+
 ```
 
 
@@ -186,7 +187,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3ODkwMDY5LC04ODY3MjgzOTQsLTExMj
-YzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMzNTU3NSwyMjA0NjQ2
-MjksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ==
+eyJoaXN0b3J5IjpbMTM0NDkyOTYwNiwtODg2NzI4Mzk0LC0xMT
+I2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkzMzU1NzUsMjIwNDY0
+NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMyXX0=
 -->
