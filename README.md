@@ -236,18 +236,15 @@ journalctl -f
 journalctl /usr/lib/systemd/systemd
 # show all messages by a specific process:
 journalctl _PID=1
-    
--   Show all messages by a specific unit:
-    
-    # journalctl -u man-db.service
-    
--   Show kernel ring buffer:
-    
-    # journalctl -k
+# show all messages by a specific unit:
+journalctl -u <service>
+# show kernel ring buffer:
+journalctl -k
 ```
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2OTc5NTQzMiwtMTgwNDQ4NzE3NSwxOD
+eyJoaXN0b3J5IjpbMjA0ODcxMTA2OSwtMTgwNDQ4NzE3NSwxOD
 M0NzA0OTY3LDExOTAxMjk1OTEsMTcwMjU3OTc2MiwxNDUyNDY0
 MzI0LDEzNDQ5Mjk2MDYsLTg4NjcyODM5NCwtMTEyNjMwMTA2NC
 wxNzMzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2NDYyOSwxNDkz
