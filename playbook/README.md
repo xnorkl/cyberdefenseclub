@@ -105,6 +105,7 @@ exit
 # login as admin and restrict root and su
 sudo -i -u <admin>
 sudo passwd -l root 
+sudo chown 
 ```
 **Always use sudo -i -u admin when performing admin tasks!*
 
@@ -177,7 +178,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTMwOTE5MTQsLTg4NjcyODM5NCwtMT
-EyNjMwMTA2NCwxNzMzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2
-NDYyOV19
+eyJoaXN0b3J5IjpbMTA3MjkyOTg3NCwtODg2NzI4Mzk0LC0xMT
+I2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkzMzU1NzUsMjIwNDY0
+NjI5XX0=
 -->
