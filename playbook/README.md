@@ -61,9 +61,10 @@ F --> C
 Injects are most often tasks associated with system administration tasks.
 /example inject/
 
-E: 
-- Resolve an inject tasked by the Captain or Change Control Officer and pass along proper documentation. 
-Ask for help often.
+Each team is responsible for: 
+- Inject Resolution 
+- Proper documentation 
+- Commu
 
 ## Hardening
 There should be no injects given within the first 15 minutes. Hardening each and every device under your purview is the first step that should be taken towards securing a system. Since hardening a system is never completely finished, break hardening up into an initial step and a recurrent process. 
@@ -188,7 +189,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NjYxOTE3NywxMzQ0OTI5NjA2LC04OD
+eyJoaXN0b3J5IjpbMTk3MzU1MTIwMywxMzQ0OTI5NjA2LC04OD
 Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
 NTU3NSwyMjA0NjQ2MjldfQ==
 -->
