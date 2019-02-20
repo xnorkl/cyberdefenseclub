@@ -63,10 +63,8 @@ There should be no injects given within the first 15 minutes. Hardening each and
 
  ```mermaid
 graph LR
-A(0. Inject) --> B(1. Harden)
-B --> C(2. Enumate)
-C --> D(3. Hunt)
-D --> A
+A(Initial) --> B(Harden)
+B --> B
 ```
 
 
@@ -190,7 +188,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwOTgxMzUyMCwtODg2NzI4Mzk0LC0xMT
+eyJoaXN0b3J5IjpbMTA1OTUzNjc5NiwtODg2NzI4Mzk0LC0xMT
 I2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkzMzU1NzUsMjIwNDY0
 NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMyXX0=
 -->
