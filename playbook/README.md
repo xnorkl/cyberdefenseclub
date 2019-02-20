@@ -63,8 +63,8 @@ There should be no injects given within the first 15 minutes.Hardening each and 
 
 This initial step breaks down neatly into three smaller, consecutive steps:
   	
-&nbsp;&nbsp;1. Change Default Credentials
-&nbsp;&nbsp;2. Create an Admin Account
+&nbsp;&nbsp;1. Secure Credentials
+&nbsp;&nbsp;2. 
 &nbsp;&nbsp;3. Restrict Login Access  
 
 ### Network Admin 
@@ -169,5 +169,6 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTkzMzU1NzUsMjIwNDY0NjI5XX0=
+eyJoaXN0b3J5IjpbMTczMzQ4MzM3MiwtMTIxOTMzNTU3NSwyMj
+A0NjQ2MjldfQ==
 -->
