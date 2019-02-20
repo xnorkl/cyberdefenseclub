@@ -226,12 +226,12 @@ systemctl enable <service>
 systemctl disable <service>
 #to list running services
 systemctl | grep running
-
+#to list 
 
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMDcwNzIyNSwxMTkwMTI5NTkxLDE3MD
+eyJoaXN0b3J5IjpbMTgzNDcwNDk2NywxMTkwMTI5NTkxLDE3MD
 I1Nzk3NjIsMTQ1MjQ2NDMyNCwxMzQ0OTI5NjA2LC04ODY3Mjgz
 OTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMzNTU3NS
 wyMjA0NjQ2MjldfQ==
