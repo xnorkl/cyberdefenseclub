@@ -155,7 +155,7 @@ sudo -i -u <admin>
 sudo passwd -l root 
 sudo chown <admin>:wheel /bin/su
 ```
-#####  &nbsp;&nbsp;&nbsp;&nbsp;**Use sudo -i -u admin when performing admin tasks!*
+#####  &nbsp;&nbsp;&nbsp;&nbsp;**Use sudo -i -u adminname when performing admin tasks!*
 
 &nbsp; 3. Restrict Login Access  
 
@@ -278,9 +278,9 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDkyOTU2NDEsMjA5ODk5MjE0NiwtMT
-gwNDQ4NzE3NSwxODM0NzA0OTY3LDExOTAxMjk1OTEsMTcwMjU3
-OTc2MiwxNDUyNDY0MzI0LDEzNDQ5Mjk2MDYsLTg4NjcyODM5NC
-wtMTEyNjMwMTA2NCwxNzMzNDgzMzcyLC0xMjE5MzM1NTc1LDIy
-MDQ2NDYyOV19
+eyJoaXN0b3J5IjpbMTcxODc4NjM2NCwyMDk4OTkyMTQ2LC0xOD
+A0NDg3MTc1LDE4MzQ3MDQ5NjcsMTE5MDEyOTU5MSwxNzAyNTc5
+NzYyLDE0NTI0NjQzMjQsMTM0NDkyOTYwNiwtODg2NzI4Mzk0LC
+0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkzMzU1NzUsMjIw
+NDY0NjI5XX0=
 -->
