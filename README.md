@@ -74,9 +74,9 @@ This initial step breaks down neatly into three smaller, consecutive steps:
 &nbsp;&nbsp;3. Define Firewall Rules   
 
 ### - Windows Team
-&nbsp;&nbsp;1. Change Default Credentials
-&nbsp;&nbsp;2. Create an Admin Account
-&nbsp;&nbsp;3. Restrict Login Access  
+&nbsp;&nbsp;**1. Change Default Credentials**
+&nbsp;&nbsp;**2. Create an Admin Account**
+&nbsp;&nbsp;**3. Restrict Login Access**  
 
 log successful and failed logins
 ```powershell
@@ -89,13 +89,8 @@ auditpol.exe /set /category:"Logon/Logoff"  /success:enable /failure:enable | ou
 # change default password for default login
 passwd 
 ```
-&nbsp;&nbsp;2. Create an Admin Account
-&nbsp;&nbsp;3. Restrict Login Access  
-
-**Adding an Administrator Account**
+&nbsp;&nbsp;**2. Create an Admin Account**
 ```bash
-# change default password for default login
-passwd 
 # open a root shell and change root password
 su 
 passwd
@@ -112,6 +107,10 @@ sudo -i -u <admin>
 sudo passwd -l root
 # always use sudo -i -u <admin> when performing admin tasks!
 ```
+&nbsp;&nbsp;3. Restrict Login Access  
+
+
+
 **Administrating the Wheel Group**
 
 Add the wheel group if it doesn't already exist. 
@@ -177,7 +176,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMzM5NDk5OSwxNzMzNDgzMzcyLC0xMj
-E5MzM1NTc1LDIyMDQ2NDYyOSwxNDkzODAxODY4LDE3NDYxMzEz
-Ml19
+eyJoaXN0b3J5IjpbLTExMTM3MzIxNTksMTczMzQ4MzM3MiwtMT
+IxOTMzNTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2MTMx
+MzJdfQ==
 -->
