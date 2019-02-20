@@ -84,13 +84,10 @@ auditpol.exe /set /category:"Logon/Logoff"  /success:enable /failure:enable | ou
 ```
 
 ### - Linux Team
-&nbsp;&nbsp;**1. change user credentials**
+&nbsp;&nbsp;**1. change default user credentials**
 ```bash
 # change default password for default login
-passwd 
-```
-&nbsp;&nbsp;**2. add an admin user to the wheel group**
-```bash
+passwd
 # open a root shell and change root password
 su 
 passwd
@@ -98,8 +95,11 @@ passwd
 usermod -l <newname> <oldname>
 usermod -d ~/home/<newname> -m <newname>
 # symlink $HOME 
-ln -s ~/home/<newname> ~/home/<oldname>
-# create an admin account
+ln -s ~/home/<newname> ~/home/<oldname> 
+```
+&nbsp;&nbsp;**2. add an admin user to the wheel group and lock root**
+```bash
+# while root create an admin account
 useradd -mg wheel <admin>
 passwd <admin> 
 exit
@@ -178,7 +178,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NTk3MDI3MiwxNzMzNDgzMzcyLC0xMj
-E5MzM1NTc1LDIyMDQ2NDYyOSwxNDkzODAxODY4LDE3NDYxMzEz
-Ml19
+eyJoaXN0b3J5IjpbLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMT
+IxOTMzNTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2MTMx
+MzJdfQ==
 -->
