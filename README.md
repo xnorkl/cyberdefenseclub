@@ -37,8 +37,9 @@ J(Network Admin) --> A
 This is a team competition, where coordination and communication are imperative to success.
 
 ## The Game Plan
-Injects and Incident's are prioritized.
-The entire team is responsible for completing each inject. 
+**Injects** and **Incidents** are prioritized.
+The entire team is responsible for completing each inject.
+ 
 
 If an inject does not directly deal with a service or device under your team's purview or if there are no current injects at all, move to hardening, then enumeration. Rinse and repeat.
  
@@ -186,7 +187,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NTgzMjc5NywxMzQ0OTI5NjA2LC04OD
+eyJoaXN0b3J5IjpbMTc1NTAwMjU3MiwxMzQ0OTI5NjA2LC04OD
 Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
 NTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ
 ==
