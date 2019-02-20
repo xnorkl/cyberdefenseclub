@@ -84,32 +84,33 @@ auditpol.exe /set /category:"Logon/Logoff"  /success:enable /failure:enable | ou
 ```
 
 ### - Linux Team
-&nbsp;&nbsp;1. Change Default Credentials
+&nbsp;&nbsp;**1. change user credentials**
 ```bash
-
+# change default password for default login
+passwd 
 ```
 &nbsp;&nbsp;2. Create an Admin Account
 &nbsp;&nbsp;3. Restrict Login Access  
 
 **Adding an Administrator Account**
 ```bash
-#Change default password for default login
+# change default password for default login
 passwd 
-#Open a root shell and change root password
+# open a root shell and change root password
 su 
 passwd
-#While root, change default username
+# while root, change default username
 usermod -l <newname> <oldname>
 usermod -d ~/home/<newname> -m <newname>
 ln -s ~/home/<newname> ~/home/<oldname>
-#Create an admin account
+# create an admin account
 useradd -mg wheel <admin>
 passwd <admin> 
 exit
-#Login as admin and restrict root and su
+# login as admin and restrict root and su
 sudo -i -u <admin>
 sudo passwd -l root
-#Always use sudo -i -u <admin> when performing admin tasks!
+# always use sudo -i -u <admin> when performing admin tasks!
 ```
 **Administrating the Wheel Group**
 
@@ -176,7 +177,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwODM1MTE4MSwxNzMzNDgzMzcyLC0xMj
+eyJoaXN0b3J5IjpbLTUzMzM5NDk5OSwxNzMzNDgzMzcyLC0xMj
 E5MzM1NTc1LDIyMDQ2NDYyOSwxNDkzODAxODY4LDE3NDYxMzEz
 Ml19
 -->
