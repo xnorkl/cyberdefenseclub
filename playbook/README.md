@@ -102,7 +102,7 @@ ln -s ~/home/<newname> ~/home/<oldname>
 useradd -mg wheel <admin>
 passwd <admin> 
 exit
-# login as admin and restrict root and su
+# login as admin and restrict root login and su to <admin>
 sudo -i -u <admin>
 sudo passwd -l root 
 sudo chown <admin>:wheel /bin/su
@@ -178,7 +178,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMzgzOTk2MywtODg2NzI4Mzk0LC0xMT
-I2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkzMzU1NzUsMjIwNDY0
-NjI5XX0=
+eyJoaXN0b3J5IjpbLTE4MDQxMzg3MDYsLTg4NjcyODM5NCwtMT
+EyNjMwMTA2NCwxNzMzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2
+NDYyOV19
 -->
