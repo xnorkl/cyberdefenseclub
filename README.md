@@ -213,11 +213,14 @@ chmod 0077 /boot /etc/{iptables,artptables}
 #### Maintaining Services
 ##### systemctl
 ```bash
-systemctl 
+#to list a service
+systemctl
+#to start a service
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU3MDE3NzE0LDE3MDI1Nzk3NjIsMTQ1Mj
-Q2NDMyNCwxMzQ0OTI5NjA2LC04ODY3MjgzOTQsLTExMjYzMDEw
-NjQsMTczMzQ4MzM3MiwtMTIxOTMzNTU3NSwyMjA0NjQ2MjksMT
-Q5MzgwMTg2OCwxNzQ2MTMxMzJdfQ==
+eyJoaXN0b3J5IjpbLTMwODY5MjcyMCwxNzAyNTc5NzYyLDE0NT
+I0NjQzMjQsMTM0NDkyOTYwNiwtODg2NzI4Mzk0LC0xMTI2MzAx
+MDY0LDE3MzM0ODMzNzIsLTEyMTkzMzU1NzUsMjIwNDY0NjI5LD
+E0OTM4MDE4NjgsMTc0NjEzMTMyXX0=
 -->
