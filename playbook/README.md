@@ -73,7 +73,11 @@ The entire team is responsible for maintaining fundamental services:
 - POP3
 - DNS
 
-Each team is responsible maintaining the services under their purview.
+Each team is responsible maintaining the services under their purview:
+- #### Firewall
+	- Rules should be defined for each fundamental service
+- #### Windows
+- #### Linux
 
 ## Hardening
 There should be no injects given within the first 15 minutes. Hardening each and every device under your purview is the first step that should be taken towards securing a system. Since hardening a system is never completely finished, break hardening up into an initial step and a recurrent process. 
@@ -200,7 +204,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 
 **find**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDQ2OTYxMjMsMTQ1MjQ2NDMyNCwxMz
-Q0OTI5NjA2LC04ODY3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4
-MzM3MiwtMTIxOTMzNTU3NSwyMjA0NjQ2MjldfQ==
+eyJoaXN0b3J5IjpbMTE0OTQyMDA3MiwxNDUyNDY0MzI0LDEzND
+Q5Mjk2MDYsLTg4NjcyODM5NCwtMTEyNjMwMTA2NCwxNzMzNDgz
+MzcyLC0xMjE5MzM1NTc1LDIyMDQ2NDYyOV19
 -->
