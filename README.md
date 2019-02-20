@@ -213,11 +213,9 @@ chmod 0077 /boot /etc/{iptables,artptables}
 #### Maintaining Services
 ##### systemctl
 ```bash
-# to list a service:
-systemctl
 # to get service status:
 systemctl status <service>  # you can omit <service> to list all as a tree
-# to list running services or failed servi:
+# to list running services or failed services:
 systemctl | grep running
 systemctl --failed
 # to start, stop, restart a status: 
@@ -227,12 +225,13 @@ systemctl stop <status>
 # to enable or disable a service:
 systemctl enable <service>
 systemctl disable <service>
-
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNzEyMDI4NywxODM0NzA0OTY3LDExOT
-AxMjk1OTEsMTcwMjU3OTc2MiwxNDUyNDY0MzI0LDEzNDQ5Mjk2
-MDYsLTg4NjcyODM5NCwtMTEyNjMwMTA2NCwxNzMzNDgzMzcyLC
-0xMjE5MzM1NTc1LDIyMDQ2NDYyOSwxNDkzODAxODY4LDE3NDYx
-MzEzMl19
+eyJoaXN0b3J5IjpbLTE5OTc1NDA4MTAsMTgzNDcwNDk2NywxMT
+kwMTI5NTkxLDE3MDI1Nzk3NjIsMTQ1MjQ2NDMyNCwxMzQ0OTI5
+NjA2LC04ODY3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3Mi
+wtMTIxOTMzNTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2
+MTMxMzJdfQ==
 -->
