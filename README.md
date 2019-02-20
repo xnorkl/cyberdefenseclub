@@ -89,9 +89,8 @@ auditpol.exe /set /category:"Logon/Logoff"  /success:enable /failure:enable | ou
 # change default password for default login
 passwd
 # open a root shell and change root password
-su 
+sudo -i 
 passwd
-# while root, change default username
 usermod -l <newname> <oldname>
 usermod -d ~/home/<newname> -m <newname>
 # symlink $HOME 
@@ -178,7 +177,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMT
-IxOTMzNTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2MTMx
-MzJdfQ==
+eyJoaXN0b3J5IjpbLTg4NjcyODM5NCwtMTEyNjMwMTA2NCwxNz
+MzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2NDYyOSwxNDkzODAx
+ODY4LDE3NDYxMzEzMl19
 -->
