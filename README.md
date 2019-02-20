@@ -66,19 +66,19 @@ Each team is responsible for:
 
 ## Incidents
 The entire team is responsible for maintaining fundamental services:
-- http
-- https
-- Webmail-HTTP
-- SMTP
-- POP3
-- DNS
+- #### HTTP
+- #### HTTPS
+- #### Webmail-HTTP
+- #### SMTP
+- #### POP3
+- #### DNS
 
 Each team is responsible maintaining the services under their purview:
 - #### Firewall
 	- Egress and Ingress Rules should be defined for each fundamental service
 - #### Windows
 	- AD DNS should remain up at all times
-	- Webmail-ht
+	- Webmail-HTTP
 - #### Linux
 	- https
 
@@ -207,8 +207,8 @@ chmod 0077 /boot /etc/{iptables,artptables}
 
 **find**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MDY2MDEwMSwxNDUyNDY0MzI0LDEzND
-Q5Mjk2MDYsLTg4NjcyODM5NCwtMTEyNjMwMTA2NCwxNzMzNDgz
-MzcyLC0xMjE5MzM1NTc1LDIyMDQ2NDYyOSwxNDkzODAxODY4LD
-E3NDYxMzEzMl19
+eyJoaXN0b3J5IjpbMjI0NzEyODcsMTQ1MjQ2NDMyNCwxMzQ0OT
+I5NjA2LC04ODY3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3
+MiwtMTIxOTMzNTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNz
+Q2MTMxMzJdfQ==
 -->
