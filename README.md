@@ -149,27 +149,6 @@ auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/t
 * soft nproc 100
 * hard nproc 200
 ```
-**User Administration**
-Set a delay upon authentication failure
-Lock out a user after 3 repeated failed attempts
-```bash
-/etc/pam.d/system-login
-
-auth optional pam_faildelay.so delay=4000000
-auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/tallylog
-```
-Limit processes run by users
-```bash
-/etc/security/limits.conf
-
-* soft nproc 100
-* hard nproc 200
-```
-
-
-
-	
-
 ## Enumeration
 
 
@@ -202,7 +181,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwODcwNTYyNiwxMzQ0OTI5NjA2LC04OD
+eyJoaXN0b3J5IjpbMTQ1MjQ2NDMyNCwxMzQ0OTI5NjA2LC04OD
 Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
 NTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ
 ==
