@@ -215,12 +215,16 @@ chmod 0077 /boot /etc/{iptables,artptables}
 ```bash
 #to list a service
 systemctl
-#to start a service
+# to get system status
+systemctl status
+#to start, stop, enable or disable a service
+systemctl start <status>
+syste
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwODY5MjcyMCwxNzAyNTc5NzYyLDE0NT
-I0NjQzMjQsMTM0NDkyOTYwNiwtODg2NzI4Mzk0LC0xMTI2MzAx
-MDY0LDE3MzM0ODMzNzIsLTEyMTkzMzU1NzUsMjIwNDY0NjI5LD
-E0OTM4MDE4NjgsMTc0NjEzMTMyXX0=
+eyJoaXN0b3J5IjpbLTE3ODA2OTQ2ODUsMTcwMjU3OTc2MiwxND
+UyNDY0MzI0LDEzNDQ5Mjk2MDYsLTg4NjcyODM5NCwtMTEyNjMw
+MTA2NCwxNzMzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2NDYyOS
+wxNDkzODAxODY4LDE3NDYxMzEzMl19
 -->
