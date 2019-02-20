@@ -19,7 +19,7 @@ meaning each year team composition should change to meet the challenges presente
 ## Scoring
 
 ## Team Composition
-Our team composition this year is a close mapping of the enterprise architecture, with Captain and Technical Lead designated to carry out tasking injections to any of three teams: Windows, Unix, and Firewall administration.
+Our team composition this year is a close mapping of the enterprise architecture, with Captain and Change Control Officer designated to carry out tasking injections to any of three teams: Windows, Unix, and Firewall administration.
  
  ```mermaid
 graph LR
@@ -37,99 +37,152 @@ J(Network Admin) --> A
 This is a team competition, where coordination and communication are imperative to success.
 
 ## The Game Plan
-The entire team is responsible for completing each inject. 
+**Injects** and **Incidents** are prioritized.
+- Injects correspond to tasks received by the Captain. The entire team is responsible for completing each inject.
+- Incidents correspond to primary services taken down by the red team or *otherwise* 
 
-If an inject does not directly deal with a service or device under your team's purview or if there are no current injects at all, move to hardening, then enumeration, then hunt. Rinse and repeat.
+To successfully balance inject completion, incident resolution all while maintaining or improving a security posture, refer to this work flow:
  
  ```mermaid
 graph LR
-A(0. Inject) --> B(1. Harden)
-B --> C(2. Enumate)
-C --> D(3. Hunt)
-D --> A
+A(Inject Completion) --> B(Initial Hardening)
+B --> C(Harden)
+C --> D(Enumerate)
+D --> E(Hunt)
+A --> C
+E --> A
+A --> F(Incident Resoultion)
+F --> C
 ```
 
-
-
 ## Injects
-
-Injects are most often tasks associated with system administration.
-Along with maintaining fundamental services, injects take priority.
+Injects are most often tasks associated with system administration tasks.
 /example inject/
-It is each team's responsibility to properly resolve an inject tasked by the Captain or Change Control Officer and pass along proper documentation. Ask for help often.
+
+Each team is responsible for: 
+- Resolving injects tasked to that team 
+- Proper documentation 
+- Communicating with other teams 
+
+## Incidents
+The entire team is responsible for maintaining fundamental services:
+- #### HTTP
+- #### HTTPS
+- #### Webmail-HTTP
+- #### SMTP
+- #### POP3
+- #### DNS
+
+Each team is responsible maintaining the services under their purview:
+- #### Firewall
+	- Egress and Ingress Rules for all fundamental services
+- #### Windows
+	- AD DNS 
+	- Webmail-HTTP
+	- POP3
+- #### Linux
+	- HTTP/HTTPS
+	- DNS
+	- SMTP
 
 ## Hardening
-There should be no injects given within the first 15 minutes. 
-Hardening each and every device under your purview is the first objective that should be taken.  
- 
-1. Change Default Credentials
-2. Create an Admin Account
-4. Restrict Login Access  
+There should be no injects given within the first 15 minutes. Hardening each and every device under your purview is the first step that should be taken towards securing a system. Since hardening a system is never completely finished, break hardening up into an initial step and a recurrent process. 
 
-### Network Admin 
+The initial step breaks down neatly into three smaller, consecutive steps:
 
-### Windows Team
+&nbsp;&nbsp;1. new user passwords
+&nbsp;&nbsp;2. configure admin accounts
+&nbsp;&nbsp;3. access rights 
+
+### These steps differ slightly per team.
+
+#### - Network Admin 
+&nbsp;&nbsp;1. Change Default Credentials
+
+&nbsp;&nbsp;2. Harden Admin Account
+
+&nbsp;&nbsp;3. Define Firewall Rules   
+
+#### - Windows Team
+&nbsp;&nbsp;1. Change Default Credentials
+
+&nbsp;&nbsp;2. Create an Admin Account
+
+&nbsp;&nbsp;3. Restrict Login Access
+
 log successful and failed logins
 ```powershell
 auditpol.exe /set /category:"Logon/Logoff"  /success:enable /failure:enable | out-null
 ```
 
-### Linux Team
-**Adding an Administrator Account**
+#### - Linux Team
+
+&nbsp;1. change default user credentials
 ```bash
-#Change default password for default login
-passwd 
-#Open a root shell and change root password
-su 
+# change default password for default login
 passwd
-#While root, change default username
+# open a root shell and change root password
+sudo -i 
+passwd
 usermod -l <newname> <oldname>
 usermod -d ~/home/<newname> -m <newname>
-ln -s ~/home/<newname> ~/home/<oldname>
-#Create an admin account
-useradd -mg wheel <admin>
-passwd <admin> 
-exit
-#Login as admin and restrict root and su
-sudo -i -u <admin>
-sudo passwd -l root
-#Always use sudo -i -u <admin> when performing admin tasks!
+# symlink $HOME 
+ln -s ~/home/<newname> ~/home/<oldname> 
 ```
-**Administrating the Wheel Group**
+&nbsp;2. configure wheel and add an admin
 
-Add the wheel group if it doesn't already exist. 
-Restrict the use of sudo to the wheel group by configuring **/etc/sudoers**. Use visudo and uncomment the following: 
+*add the **wheel** group if it doesn't already exist!* 
+```bash
+groupadd wheel
+```
+*Restrict the use of sudo to the wheel group by configuring **/etc/sudoers**.*
+*Use **visudo** and uncomment the following:*
 ```bash
 wheel ALL=(ALL) ALL  
 ```
-Restrict use of su with pam. 
-Uncomment or add the following line to **/etc/pam.d/su**:
+*Restrict use of su with pam.*
+*Uncomment or add the following line to **/etc/pam.d/su**:*
 ```bash
 auth		requirement	pam_wheel.so group=wheel
 ```
-**User Administration**
-Set a delay upon authentication failure
-Lock out a user after 3 repeated failed attempts
+*while root create an admin account:*
+```bash
+useradd -mg wheel <admin>
+passwd <admin> 
+exit
+# login as admin and restrict root login and su to <admin>
+sudo -i -u <admin>
+sudo passwd -l root 
+sudo chown <admin>:wheel /bin/su
+```
+##### *Always use sudo -i -u admin when performing admin tasks!*
+
+&nbsp; 3. Restrict Login Access  
+
 ```bash
 /etc/pam.d/system-login
 
+# Set a delay upon authentication failure
+# Lock out a user after 3 repeated failed attempts
 auth optional pam_faildelay.so delay=4000000
 auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/tallylog
 ```
-Limit processes run by users
+
 ```bash
 /etc/security/limits.conf
 
+#Limit processes run by users
 * soft nproc 100
 * hard nproc 200
 ```
-
-
-
-	
-
 ## Enumeration
+**nmap**
 
+**ss**
+
+**ps**
+
+**pstree**
 
 ## Hunting
 
@@ -140,11 +193,11 @@ Limit processes run by users
 
 #### File Permissions
 
-|              |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Owner|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Group          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Other          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
+|       |	r       |	w 	|	x       |
+|-------|---------------|---------------|---------------|
+|Owner	|	1	|	3	|	4 	|
+|Group	|	1	|	3	|	4	|
+|Other 	|	1	|	3	|	4	|
 **chmod**
 ```bash
 #
@@ -153,13 +206,10 @@ chmod 0077 /boot /etc/{iptables,artptables}
 
 **chown**
 
+**kill**
 
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
+**find**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0Nj
-EzMTMyXX0=
+eyJoaXN0b3J5IjpbMTcwMjU3OTc2MiwyMjA0NjQ2MjksMTQ5Mz
+gwMTg2OCwxNzQ2MTMxMzJdfQ==
 -->
