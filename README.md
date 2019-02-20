@@ -37,6 +37,7 @@ J(Network Admin) --> A
 This is a team competition, where coordination and communication are imperative to success.
 
 ## The Game Plan
+Injects and Incident's are prioritized.
 The entire team is responsible for completing each inject. 
 
 If an inject does not directly deal with a service or device under your team's purview or if there are no current injects at all, move to hardening, then enumeration. Rinse and repeat.
@@ -44,14 +45,14 @@ If an inject does not directly deal with a service or device under your team's p
  ```mermaid
 graph LR
 
-A(0. Inject) --> B(1. Initial Hardening)
-B --> C(2. Harden)
-C --> D(3. Enumerate)
-D --> E(4. Hunt)
+A(Inject) --> B(Initial Hardening)
+B --> C(Harden)
+C --> D(Enumerate)
+D --> E(Hunt)
 A --> C
 E --> A
-A --> F(0. Incident)
-F --> B
+A --> F(Incident)
+F --> C
 
 ```
 
@@ -185,7 +186,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMzM1ODI4NCwxMzQ0OTI5NjA2LC04OD
+eyJoaXN0b3J5IjpbMTg0NTgzMjc5NywxMzQ0OTI5NjA2LC04OD
 Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
 NTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ
 ==
