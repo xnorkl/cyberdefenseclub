@@ -228,10 +228,26 @@ systemctl disable <service>
 ```
 ##### journalctl
 ```bash
+# show all messages since 20 minutes ago:    
+journalctl --since "20 min ago"
+# follow new messages:
+journalctl -f
+# show all messages by a specific executable:
+journalctl /usr/lib/systemd/systemd
+# show all messages by a specific process:
+journalctl _PID=1
+    
+-   Show all messages by a specific unit:
+    
+    # journalctl -u man-db.service
+    
+-   Show kernel ring buffer:
+    
+    # journalctl -k
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMDg0Nzg4MSwtMTgwNDQ4NzE3NSwxOD
+eyJoaXN0b3J5IjpbMTg2OTc5NTQzMiwtMTgwNDQ4NzE3NSwxOD
 M0NzA0OTY3LDExOTAxMjk1OTEsMTcwMjU3OTc2MiwxNDUyNDY0
 MzI0LDEzNDQ5Mjk2MDYsLTg4NjcyODM5NCwtMTEyNjMwMTA2NC
 wxNzMzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2NDYyOSwxNDkz
