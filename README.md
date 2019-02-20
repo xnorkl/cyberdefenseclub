@@ -59,7 +59,7 @@ Along with maintaining fundamental services, injects take priority.
 It is each team's responsibility to properly resolve an inject tasked by the Captain or Change Control Officer and pass along proper documentation. Ask for help often.
 
 ## Hardening
-There should be no injects given within the first 15 minutes.Hardening each and every device under your purview is the first step that should be taken towards securing a system. 
+There should be no injects given within the first 15 minutes. Hardening each and every device under your purview is the first step that should be taken towards securing a system.  
 
 This initial step breaks down neatly into three smaller, consecutive steps:
   	
@@ -181,7 +181,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzE2MTExNjEsLTg4NjcyODM5NCwtMT
-EyNjMwMTA2NCwxNzMzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2
-NDYyOSwxNDkzODAxODY4LDE3NDYxMzEzMl19
+eyJoaXN0b3J5IjpbNTI3ODUxMjg5LC04ODY3MjgzOTQsLTExMj
+YzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMzNTU3NSwyMjA0NjQ2
+MjksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ==
 -->
