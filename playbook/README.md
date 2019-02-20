@@ -50,7 +50,9 @@ C --> D(3. Enumerate)
 D --> E(4. Hunt)
 A --> C
 E --> A
-E -->F(0.I
+A --> F(0. Incident)
+F --> 
+
 ```
 
 ## Injects
@@ -183,7 +185,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMDQ5ODc5MiwxMzQ0OTI5NjA2LC04OD
-Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
-NTU3NSwyMjA0NjQ2MjldfQ==
+eyJoaXN0b3J5IjpbLTE3ODU2NDkxNjIsMTM0NDkyOTYwNiwtOD
+g2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkz
+MzU1NzUsMjIwNDY0NjI5XX0=
 -->
