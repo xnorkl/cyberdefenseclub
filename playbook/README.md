@@ -71,7 +71,7 @@ This initial step breaks down neatly into three smaller, consecutive steps:
 ### - Network Admin 
 &nbsp;&nbsp;1. Change Default Credentials
 &nbsp;&nbsp;2. Harden Admin Account
-&nbsp;&nbsp;3. Configure   
+&nbsp;&nbsp;3. Define Firewall Rules   
 
 ### - Windows Team
 &nbsp;&nbsp;1. Change Default Credentials
@@ -85,6 +85,9 @@ auditpol.exe /set /category:"Logon/Logoff"  /success:enable /failure:enable | ou
 
 ### - Linux Team
 &nbsp;&nbsp;1. Change Default Credentials
+```bash
+
+```
 &nbsp;&nbsp;2. Create an Admin Account
 &nbsp;&nbsp;3. Restrict Login Access  
 
@@ -173,6 +176,6 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODcwNTc3NjksMTczMzQ4MzM3MiwtMT
-IxOTMzNTU3NSwyMjA0NjQ2MjldfQ==
+eyJoaXN0b3J5IjpbLTkwODM1MTE4MSwxNzMzNDgzMzcyLC0xMj
+E5MzM1NTc1LDIyMDQ2NDYyOV19
 -->
