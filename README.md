@@ -42,6 +42,7 @@ This is a team competition, where coordination and communication are imperative 
 - Incidents correspond to primary services taken down by the red team or *otherwise* 
 
 To successfully balance inject completion, incident resolution all while maintaining or improving a security posture, refer to this work flow:
+ 
  ```mermaid
 graph LR
 A(Inject Completion) --> B(Initial Hardening)
@@ -53,13 +54,16 @@ E --> A
 A --> F(Incident Resoultion)
 F --> C
 ```
+
 ## Injects
 Injects are most often tasks associated with system administration tasks.
 /example inject/
+
 Each team is responsible for: 
-- Resolving Injects tasked to that team 
+- Resolving injects tasked to that team 
 - Proper documentation 
 - Communicating with other teams 
+
 ## Hardening
 There should be no injects given within the first 15 minutes. Hardening each and every device under your purview is the first step that should be taken towards securing a system. Since hardening a system is never completely finished, break hardening up into an initial step and a recurrent process. 
 
@@ -183,7 +187,8 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM3NzY5MjI3LDEzNDQ5Mjk2MDYsLTg4Nj
-cyODM5NCwtMTEyNjMwMTA2NCwxNzMzNDgzMzcyLC0xMjE5MzM1
-NTc1LDIyMDQ2NDYyOSwxNDkzODAxODY4LDE3NDYxMzEzMl19
+eyJoaXN0b3J5IjpbLTk0MTUwMTk0NywxMzQ0OTI5NjA2LC04OD
+Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
+NTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ
+==
 -->
