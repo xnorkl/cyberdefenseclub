@@ -67,19 +67,19 @@ Each team is responsible for:
 ## Hardening
 There should be no injects given within the first 15 minutes. Hardening each and every device under your purview is the first step that should be taken towards securing a system. Since hardening a system is never completely finished, break hardening up into an initial step and a recurrent process. 
 
-The initial step breaks down neatly into three smaller, consecutive steps:
-  	
+The initial step breaks down neatly into three smaller, consecutive steps  	
 &nbsp;&nbsp;1. new user passwords
 &nbsp;&nbsp;2. configure admin accounts
 &nbsp;&nbsp;3. access rights 
-**These steps differ slightly per team.*
 
-### - Network Admin 
+### These steps differ slightly per team.
+
+#### - Network Admin 
 &nbsp;&nbsp;1. Change Default Credentials
 &nbsp;&nbsp;2. Harden Admin Account
 &nbsp;&nbsp;3. Define Firewall Rules   
 
-### - Windows Team
+#### - Windows Team
 &nbsp;&nbsp;**1. Change Default Credentials**
 &nbsp;&nbsp;**2. Create an Admin Account**
 &nbsp;&nbsp;**3. Restrict Login Access**  
@@ -89,8 +89,8 @@ log successful and failed logins
 auditpol.exe /set /category:"Logon/Logoff"  /success:enable /failure:enable | out-null
 ```
 
-### - Linux Team
-&nbsp;**1. change default user credentials**
+#### - Linux Team
+&nbsp;1. change default user credentials
 ```bash
 # change default password for default login
 passwd
@@ -187,7 +187,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MTUwMTk0NywxMzQ0OTI5NjA2LC04OD
+eyJoaXN0b3J5IjpbMTIxMTc0NzUyMywxMzQ0OTI5NjA2LC04OD
 Y3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMz
 NTU3NSwyMjA0NjQ2MjldfQ==
 -->
