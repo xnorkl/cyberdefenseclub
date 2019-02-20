@@ -79,10 +79,11 @@ Each team is responsible maintaining the services under their purview:
 - #### Windows
 	- AD DNS 
 	- Webmail-HTTP
+	- POP3
 - #### Linux
 	- HTTP/HTTPS
 	- DNS
-	- 
+	- SMTP
 
 ## Hardening
 There should be no injects given within the first 15 minutes. Hardening each and every device under your purview is the first step that should be taken towards securing a system. Since hardening a system is never completely finished, break hardening up into an initial step and a recurrent process. 
@@ -209,7 +210,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 
 **find**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMzEyMDM1NywxNDUyNDY0MzI0LDEzND
+eyJoaXN0b3J5IjpbMTcwMjU3OTc2MiwxNDUyNDY0MzI0LDEzND
 Q5Mjk2MDYsLTg4NjcyODM5NCwtMTEyNjMwMTA2NCwxNzMzNDgz
 MzcyLC0xMjE5MzM1NTc1LDIyMDQ2NDYyOSwxNDkzODAxODY4LD
 E3NDYxMzEzMl19
