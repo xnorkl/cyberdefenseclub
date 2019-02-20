@@ -64,6 +64,12 @@ Each team is responsible for:
 - Proper documentation 
 - Communicating with other teams 
 
+## Incidents
+The entire team is responsible for maintaining fundamental services:
+- http
+-
+Each team is responsible maintaining the services under their purview.
+
 ## Hardening
 There should be no injects given within the first 15 minutes. Hardening each and every device under your purview is the first step that should be taken towards securing a system. Since hardening a system is never completely finished, break hardening up into an initial step and a recurrent process. 
 
@@ -189,7 +195,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 
 **find**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODMzMDQyNjgsMTQ1MjQ2NDMyNCwxMz
+eyJoaXN0b3J5IjpbLTE5NjU4ODI1ODUsMTQ1MjQ2NDMyNCwxMz
 Q0OTI5NjA2LC04ODY3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4
 MzM3MiwtMTIxOTMzNTU3NSwyMjA0NjQ2MjksMTQ5MzgwMTg2OC
 wxNzQ2MTMxMzJdfQ==
