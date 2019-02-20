@@ -183,6 +183,37 @@ auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/t
 **ps**
 
 **pstree**
+#### Maintaining Services
+##### systemctl
+```bash
+# to get service status:
+systemctl status <service>  # you can omit <service> to list all as a tree
+# to list running services or failed services:
+systemctl | grep running
+systemctl --failed
+# to start, stop, restart a status: 
+systemctl start <status>
+systemctl restart <status>
+systemctl stop <status>
+# to enable or disable a service:
+systemctl enable <service>
+systemctl disable <service>
+```
+##### journalctl
+```bash
+# show all messages since 20 minutes ago:    
+journalctl --since "20 min ago"
+# follow new messages:
+journalctl -f
+# show all messages by a specific executable:
+journalctl /usr/lib/systemd/systemd
+# show all messages by a specific process:
+journalctl _PID=1
+# show all messages by a specific unit:
+journalctl -u <service>
+# show kernel ring buffer:
+journalctl -k
+```
 
 ## Hunting
 
@@ -241,10 +272,8 @@ journalctl -u <service>
 # show kernel ring buffer:
 journalctl -k
 ```
-
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0ODcxMTA2OSwtMTgwNDQ4NzE3NSwxOD
+eyJoaXN0b3J5IjpbMjEwMjE3NTEwNCwtMTgwNDQ4NzE3NSwxOD
 M0NzA0OTY3LDExOTAxMjk1OTEsMTcwMjU3OTc2MiwxNDUyNDY0
 MzI0LDEzNDQ5Mjk2MDYsLTg4NjcyODM5NCwtMTEyNjMwMTA2NC
 wxNzMzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2NDYyOSwxNDkz
