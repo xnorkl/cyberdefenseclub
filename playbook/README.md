@@ -59,9 +59,18 @@ Along with maintaining fundamental services, injects take priority.
 It is each team's responsibility to properly resolve an inject tasked by the Captain or Change Control Officer and pass along proper documentation. Ask for help often.
 
 ## Hardening
-There should be no injects given within the first 15 minutes. Hardening each and every device under your purview is the first step that should be taken towards securing a system. Since hardening a system is never completely finished (unless  
+There should be no injects given within the first 15 minutes. Hardening each and every device under your purview is the first step that should be taken towards securing a system. Since hardening a system is never completely finished, break hardening up into an initial step and a recurrent process. 
 
-This initial step breaks down neatly into three smaller, consecutive steps:
+ ```mermaid
+graph LR
+A(0. Inject) --> B(1. Harden)
+B --> C(2. Enumate)
+C --> D(3. Hunt)
+D --> A
+```
+
+
+The initial step breaks down neatly into three smaller, consecutive steps:
   	
 &nbsp;&nbsp;1. new user passwords
 &nbsp;&nbsp;2. configure admin accounts
@@ -181,7 +190,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc1MzU4NzIzLC04ODY3MjgzOTQsLTExMj
-YzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMzNTU3NSwyMjA0NjQ2
-MjldfQ==
+eyJoaXN0b3J5IjpbMTAwOTgxMzUyMCwtODg2NzI4Mzk0LC0xMT
+I2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkzMzU1NzUsMjIwNDY0
+NjI5XX0=
 -->
