@@ -155,7 +155,7 @@ sudo -i -u <admin>
 sudo passwd -l root 
 sudo chown <admin>:wheel /bin/su
 ```
-##### *Always use sudo -i -u admin when performing admin tasks!*
+#####  &nbsp;&nbsp;&nbsp;&nbsp;**Use sudo -i -u adminname when performing admin tasks!*
 
 &nbsp; 3. Restrict Login Access  
 
@@ -176,6 +176,10 @@ auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/t
 * hard nproc 200
 ```
 ## Enumeration
+### Firewall
+### Windows
+### Linux 
+
 **nmap**
 
 **ss**
@@ -183,6 +187,38 @@ auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/t
 **ps**
 
 **pstree**
+
+#### Maintaining Services
+##### systemctl
+```bash
+# to get service status:
+systemctl status <service>  # you can omit <service> to list all as a tree
+# to list running services or failed services:
+systemctl | grep running
+systemctl --failed
+# to start, stop, restart a status: 
+systemctl start <status>
+systemctl restart <status>
+systemctl stop <status>
+# to enable or disable a service:
+systemctl enable <service>
+systemctl disable <service>
+```
+##### journalctl
+```bash
+# show all messages since 20 minutes ago:    
+journalctl --since "20 min ago"
+# follow new messages:
+journalctl -f
+# show all messages by a specific executable:
+journalctl /usr/lib/systemd/systemd
+# show all messages by a specific process:
+journalctl _PID=1
+# show all messages by a specific unit:
+journalctl -u <service>
+# show kernel ring buffer:
+journalctl -k
+```
 
 ## Hunting
 
@@ -209,7 +245,39 @@ chmod 0077 /boot /etc/{iptables,artptables}
 **kill**
 
 **find**
+
+#### Maintaining Services
+##### systemctl
+```bash
+# to get service status:
+systemctl status <service>  # you can omit <service> to list all as a tree
+# to list running services or failed services:
+systemctl | grep running
+systemctl --failed
+# to start, stop, restart a status: 
+systemctl start <status>
+systemctl restart <status>
+systemctl stop <status>
+# to enable or disable a service:
+systemctl enable <service>
+systemctl disable <service>
+```
+##### journalctl
+```bash
+# show all messages since 20 minutes ago:    
+journalctl --since "20 min ago"
+# follow new messages:
+journalctl -f
+# show all messages by a specific executable:
+journalctl /usr/lib/systemd/systemd
+# show all messages by a specific process:
+journalctl _PID=1
+# show all messages by a specific unit:
+journalctl -u <service>
+# show kernel ring buffer:
+journalctl -k
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMjU3OTc2MiwyMjA0NjQ2MjksMTQ5Mz
-gwMTg2OCwxNzQ2MTMxMzJdfQ==
+eyJoaXN0b3J5IjpbMTcxODc4NjM2NCwxNzAyNTc5NzYyLDIyMD
+Q2NDYyOSwxNDkzODAxODY4LDE3NDYxMzEzMl19
 -->
