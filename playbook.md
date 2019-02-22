@@ -250,9 +250,11 @@ find /path/to/file -user <user> -name "*.ext"
 find /path/to/file -group <group> -name "*.ext"
 # print all shell files owned by usera and userb with ls formatting
 find /path/to/file -name "*.sh" -user usera userb -ls
-# you can user logical operators
-# -o -or, ! -not, 
+# you can also use logical operators
+# -o -or, ! -not, -a -and (^^implicit without operators)
 find /path/to/file -name "*.sh" -user usera -o userb -ls
+# delete all files owned by a user
+find /path/to/file -user <badguy> -dele
 ```
 
 **chown**
@@ -295,7 +297,8 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU4MzM2ODEwLC03NjU1Nzg2MzYsLTE4Mz
-A2NDMwNDQsLTE4OTYzNDAyNzQsMTcxODc4NjM2NCwxNzAyNTc5
-NzYyLDIyMDQ2NDYyOSwxNDkzODAxODY4LDE3NDYxMzEzMl19
+eyJoaXN0b3J5IjpbLTEzMzM1MTgwNDEsLTc2NTU3ODYzNiwtMT
+gzMDY0MzA0NCwtMTg5NjM0MDI3NCwxNzE4Nzg2MzY0LDE3MDI1
+Nzk3NjIsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMyXX
+0=
 -->
