@@ -241,7 +241,7 @@ chmod 0077 /boot /etc/{iptables,artptables}
 ```
 **find**
 ```bash
-# Note: /directory/path refers to any path, (i.e. . ../ / /home /etc
+# Note: /directory/path refers to any path, i.e. . ../ / /home /etc ..
 # print files owned by a user
 find /directory/path -user <user>
 # print .ext files owned by a user
@@ -291,10 +291,10 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkwMTQ5ODA2LC0xODk2MzQwMjc0LDE3MT
-g3ODYzNjQsMjA5ODk5MjE0NiwtMTgwNDQ4NzE3NSwxODM0NzA0
-OTY3LDExOTAxMjk1OTEsMTcwMjU3OTc2MiwxNDUyNDY0MzI0LD
-EzNDQ5Mjk2MDYsLTg4NjcyODM5NCwtMTEyNjMwMTA2NCwxNzMz
-NDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2NDYyOSwxNDkzODAxOD
-Y4LDE3NDYxMzEzMl19
+eyJoaXN0b3J5IjpbLTE4MzA2NDMwNDQsLTE4OTYzNDAyNzQsMT
+cxODc4NjM2NCwyMDk4OTkyMTQ2LC0xODA0NDg3MTc1LDE4MzQ3
+MDQ5NjcsMTE5MDEyOTU5MSwxNzAyNTc5NzYyLDE0NTI0NjQzMj
+QsMTM0NDkyOTYwNiwtODg2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3
+MzM0ODMzNzIsLTEyMTkzMzU1NzUsMjIwNDY0NjI5LDE0OTM4MD
+E4NjgsMTc0NjEzMTMyXX0=
 -->
