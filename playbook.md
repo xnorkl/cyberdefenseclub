@@ -183,7 +183,9 @@ auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/t
 **nmap**
 
 **ss**
-
+```bash
+ss -ltp
+```
 **ps**
 
 **pstree**
@@ -311,8 +313,8 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDEzMzQ3NTQsLTM4OTQzODk3NSwtMT
-QzODE3MTI0MiwtNzY1NTc4NjM2LC0xODMwNjQzMDQ0LC0xODk2
-MzQwMjc0LDE3MTg3ODYzNjQsMTcwMjU3OTc2MiwyMjA0NjQ2Mj
-ksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ==
+eyJoaXN0b3J5IjpbLTM1ODI2NzcyMSwtMTQ0MTMzNDc1NCwtMz
+g5NDM4OTc1LC0xNDM4MTcxMjQyLC03NjU1Nzg2MzYsLTE4MzA2
+NDMwNDQsLTE4OTYzNDAyNzQsMTcxODc4NjM2NCwxNzAyNTc5Nz
+YyLDIyMDQ2NDYyOSwxNDkzODAxODY4LDE3NDYxMzEzMl19
 -->
