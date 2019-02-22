@@ -259,8 +259,9 @@ find /path/to/file -user <badguy> -delete
 |x |  1  |  1  |  1  |
 **chown**
 ```bash
-# 
-chown <user>:<group> 
+# change ownership of a file to <user>:<group>
+chown <user>:<group> /path/to/file
+chown -hR admin
 
 ```
 
@@ -307,8 +308,8 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NDg3MjIxOCwtMzg5NDM4OTc1LC0xND
-M4MTcxMjQyLC03NjU1Nzg2MzYsLTE4MzA2NDMwNDQsLTE4OTYz
-NDAyNzQsMTcxODc4NjM2NCwxNzAyNTc5NzYyLDIyMDQ2NDYyOS
-wxNDkzODAxODY4LDE3NDYxMzEzMl19
+eyJoaXN0b3J5IjpbMzA5OTU2MTAyLC0zODk0Mzg5NzUsLTE0Mz
+gxNzEyNDIsLTc2NTU3ODYzNiwtMTgzMDY0MzA0NCwtMTg5NjM0
+MDI3NCwxNzE4Nzg2MzY0LDE3MDI1Nzk3NjIsMjIwNDY0NjI5LD
+E0OTM4MDE4NjgsMTc0NjEzMTMyXX0=
 -->
