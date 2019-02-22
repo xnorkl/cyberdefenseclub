@@ -268,7 +268,8 @@ chown -hR admin /directory
 |w |  2  |  2  |  2  |
 |x |  1  |  1  |  1  |
 ```bash
-# modify a
+# modify 
+# change access mode of a folder
 chmod <o,g,e>
 # 
 chmod 0700 
@@ -311,8 +312,8 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NTMwMTAyOSwtMzg5NDM4OTc1LC0xND
-M4MTcxMjQyLC03NjU1Nzg2MzYsLTE4MzA2NDMwNDQsLTE4OTYz
-NDAyNzQsMTcxODc4NjM2NCwxNzAyNTc5NzYyLDIyMDQ2NDYyOS
-wxNDkzODAxODY4LDE3NDYxMzEzMl19
+eyJoaXN0b3J5IjpbOTEzMTE4MzA4LC0zODk0Mzg5NzUsLTE0Mz
+gxNzEyNDIsLTc2NTU3ODYzNiwtMTgzMDY0MzA0NCwtMTg5NjM0
+MDI3NCwxNzE4Nzg2MzY0LDE3MDI1Nzk3NjIsMjIwNDY0NjI5LD
+E0OTM4MDE4NjgsMTc0NjEzMTMyXX0=
 -->
