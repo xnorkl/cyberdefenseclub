@@ -245,8 +245,9 @@ chmod 0077 /boot /etc/{iptables,artptables}
 find /directory/path -user <user>
 # print .ext files owned by a user
 find /directory/path -user <user> -name "*.ext"
-# you can do the same but by group. 
-find /directory/path -group <group> -name "*.ext" -ls
+# you can do the same but by group 
+find /directory/path -group <group> -name "*.ext"
+# print all .
 ```
 
 **chown**
@@ -289,7 +290,7 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTYzNDAyNzQsMTcxODc4NjM2NCwxNz
-AyNTc5NzYyLDIyMDQ2NDYyOSwxNDkzODAxODY4LDE3NDYxMzEz
-Ml19
+eyJoaXN0b3J5IjpbNjc2MjYzMzk3LC0xODk2MzQwMjc0LDE3MT
+g3ODYzNjQsMTcwMjU3OTc2MiwyMjA0NjQ2MjksMTQ5MzgwMTg2
+OCwxNzQ2MTMxMzJdfQ==
 -->
