@@ -239,12 +239,18 @@ journalctl -k
 #
 chmod 0077 /boot /etc/{iptables,artptables}
 ```
+**find**
+```bash
+find /directory/path 
+```
 
 **chown**
 
+
+
 **kill**
 
-**find**
+
 
 #### Maintaining Services
 ##### systemctl
@@ -278,9 +284,10 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxODc4NjM2NCwyMDk4OTkyMTQ2LC0xOD
-A0NDg3MTc1LDE4MzQ3MDQ5NjcsMTE5MDEyOTU5MSwxNzAyNTc5
-NzYyLDE0NTI0NjQzMjQsMTM0NDkyOTYwNiwtODg2NzI4Mzk0LC
-0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkzMzU1NzUsMjIw
-NDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMyXX0=
+eyJoaXN0b3J5IjpbNTM3NzI4MjUsMTcxODc4NjM2NCwyMDk4OT
+kyMTQ2LC0xODA0NDg3MTc1LDE4MzQ3MDQ5NjcsMTE5MDEyOTU5
+MSwxNzAyNTc5NzYyLDE0NTI0NjQzMjQsMTM0NDkyOTYwNiwtOD
+g2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkz
+MzU1NzUsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMyXX
+0=
 -->
