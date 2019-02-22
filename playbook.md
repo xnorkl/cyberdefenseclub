@@ -248,8 +248,8 @@ find /path/to/file -user <user>
 find /path/to/file -user <user> -name "*.ext"
 # you can do the same but by group 
 find /path/to/file -group <group> -name "*.ext"
-# print all shell files owned by two users and print
-find /path/to/file -user 
+# print all shell files owned by usera and userb 
+find /path/to/file -user usera userb 
 ```
 
 **chown**
@@ -292,8 +292,8 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjA2Mzc3OTUsLTc2NTU3ODYzNiwtMT
-gzMDY0MzA0NCwtMTg5NjM0MDI3NCwxNzE4Nzg2MzY0LDE3MDI1
-Nzk3NjIsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMyXX
-0=
+eyJoaXN0b3J5IjpbLTMyMTYyNjE4OCwtNzY1NTc4NjM2LC0xOD
+MwNjQzMDQ0LC0xODk2MzQwMjc0LDE3MTg3ODYzNjQsMTcwMjU3
+OTc2MiwyMjA0NjQ2MjksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ
+==
 -->
