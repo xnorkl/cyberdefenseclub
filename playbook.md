@@ -260,6 +260,9 @@ find /path/to/file -user <badguy> -delete
 **chown**
 
 
+**chmod**
+
+
 
 **kill**
 
@@ -297,8 +300,8 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzgxNzEyNDIsLTc2NTU3ODYzNiwtMT
-gzMDY0MzA0NCwtMTg5NjM0MDI3NCwxNzE4Nzg2MzY0LDE3MDI1
-Nzk3NjIsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMyXX
-0=
+eyJoaXN0b3J5IjpbLTM4OTQzODk3NSwtMTQzODE3MTI0MiwtNz
+Y1NTc4NjM2LC0xODMwNjQzMDQ0LC0xODk2MzQwMjc0LDE3MTg3
+ODYzNjQsMTcwMjU3OTc2MiwyMjA0NjQ2MjksMTQ5MzgwMTg2OC
+wxNzQ2MTMxMzJdfQ==
 -->
