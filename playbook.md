@@ -254,7 +254,8 @@ find /path/to/file -user <badguy> -delete
 ```
 
 **chown**
-
+```bash
+```
 
 **chmod**
 ```bash
@@ -262,7 +263,8 @@ find /path/to/file -user <badguy> -delete
 chmod 0077 /boot /etc/{iptables,artptables}
 ```
 **kill**
-
+```bash
+```
 
 #### Maintaining Services
 ##### systemctl
@@ -296,7 +298,7 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTY4NjAwNTMsLTM4OTQzODk3NSwtMT
+eyJoaXN0b3J5IjpbLTE3OTk3Njg2NjEsLTM4OTQzODk3NSwtMT
 QzODE3MTI0MiwtNzY1NTc4NjM2LC0xODMwNjQzMDQ0LC0xODk2
 MzQwMjc0LDE3MTg3ODYzNjQsMTcwMjU3OTc2MiwyMjA0NjQ2Mj
 ksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ==
