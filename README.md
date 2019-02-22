@@ -235,7 +235,6 @@ journalctl -k
 |Group	|	4	|	2	|	1	|
 |Other 	|	4	|	2	|	1	|
 
-
 **find**
 ```bash
 # Note: /path/to/file refers to any path (. ./ /home /etc ..)
@@ -258,11 +257,11 @@ find /path/to/file -user <badguy> -delete
 
 
 **chmod**
-
-
-
+```bash
+#
+chmod 0077 /boot /etc/{iptables,artptables}
+```
 **kill**
-
 
 
 #### Maintaining Services
@@ -297,7 +296,7 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzEzODE3ODAsLTM4OTQzODk3NSwtMT
+eyJoaXN0b3J5IjpbLTE4NTY4NjAwNTMsLTM4OTQzODk3NSwtMT
 QzODE3MTI0MiwtNzY1NTc4NjM2LC0xODMwNjQzMDQ0LC0xODk2
 MzQwMjc0LDE3MTg3ODYzNjQsMjA5ODk5MjE0NiwtMTgwNDQ4Nz
 E3NSwxODM0NzA0OTY3LDExOTAxMjk1OTEsMTcwMjU3OTc2Miwx
