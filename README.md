@@ -241,13 +241,14 @@ chmod 0077 /boot /etc/{iptables,artptables}
 ```
 **find**
 ```bash
+# Note: /directory/path refers to any path, (i.e. . ../ / /home /etc
 # print files owned by a user
 find /directory/path -user <user>
 # print .ext files owned by a user
 find /directory/path -user <user> -name "*.ext"
 # you can do the same but by group 
 find /directory/path -group <group> -name "*.ext"
-# print all s
+# print all shell files owned by a user and 
 ```
 
 **chown**
@@ -290,7 +291,7 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI4NDA2NzIwLC0xODk2MzQwMjc0LDE3MT
+eyJoaXN0b3J5IjpbNzkwMTQ5ODA2LC0xODk2MzQwMjc0LDE3MT
 g3ODYzNjQsMjA5ODk5MjE0NiwtMTgwNDQ4NzE3NSwxODM0NzA0
 OTY3LDExOTAxMjk1OTEsMTcwMjU3OTc2MiwxNDUyNDY0MzI0LD
 EzNDQ5Mjk2MDYsLTg4NjcyODM5NCwtMTEyNjMwMTA2NCwxNzMz
