@@ -251,7 +251,7 @@ find /path/to/file -group <group> -name "*.ext"
 # print all shell files owned by usera and userb with ls formatting
 find /path/to/file -name "*.sh" -user usera userb -ls
 # you can user logical operators
-# 
+# -o -or, ! -not, 
 find /path/to/file -name "*.sh" -user usera -o userb -ls
 ```
 
@@ -295,11 +295,11 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMzA5NDk1MywtNzY1NTc4NjM2LC0xOD
-MwNjQzMDQ0LC0xODk2MzQwMjc0LDE3MTg3ODYzNjQsMjA5ODk5
-MjE0NiwtMTgwNDQ4NzE3NSwxODM0NzA0OTY3LDExOTAxMjk1OT
-EsMTcwMjU3OTc2MiwxNDUyNDY0MzI0LDEzNDQ5Mjk2MDYsLTg4
-NjcyODM5NCwtMTEyNjMwMTA2NCwxNzMzNDgzMzcyLC0xMjE5Mz
-M1NTc1LDIyMDQ2NDYyOSwxNDkzODAxODY4LDE3NDYxMzEzMl19
+eyJoaXN0b3J5IjpbNzU4MzM2ODEwLC03NjU1Nzg2MzYsLTE4Mz
+A2NDMwNDQsLTE4OTYzNDAyNzQsMTcxODc4NjM2NCwyMDk4OTky
+MTQ2LC0xODA0NDg3MTc1LDE4MzQ3MDQ5NjcsMTE5MDEyOTU5MS
+wxNzAyNTc5NzYyLDE0NTI0NjQzMjQsMTM0NDkyOTYwNiwtODg2
+NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkzMz
+U1NzUsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMyXX0=
 
 -->
