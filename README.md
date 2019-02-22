@@ -138,7 +138,13 @@ groupadd wheel
 *Restrict the use of sudo to the wheel group by configuring **/etc/sudoers**.*
 *Use **visudo** and uncomment the following:*
 ```bash
-wheel ALL=(ALL) ALL  
+# option A: faster
+root ALL=(ALL) ALL
+wheel ALL=(ALL) ALL
+
+# option B: arguably more secure
+#root ALL=(ALL) ALL
+wheel ALL=(ALL) NOPASSWD: ALL  
 ```
 *Restrict use of su with pam.*
 *Uncomment or add the following line to **/etc/pam.d/su**:*
@@ -181,14 +187,36 @@ auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/t
 ### Linux 
 
 **nmap**
-
-**ss**
 ```bash
-ss -ltp
-```
-**ps**
+# basic usage
+sudo nmap <args> <ip_address> 
 
-**pstree**
+# scan multiple hosts by using a comma
+sudo nmap 192.168.0.1,8.8.8.8,8.8.4.4
+
+# scan whole subnet
+sudo nmap 172.20.201.0/24
+
+# aggressive scan (time consuming)
+# detects OS and services
+
+sudo nmap -A <hosts> 
+# nmap specific port
+
+sudo nmap -p <port> <host>
+# nmap range of ports
+
+sudo nmap -p <startport-endport> <host>
+# example:
+sudo nmap -p 1-100 192.168.1.254
+
+#nmap 100 most common ports
+sudo nmap -F <host>
+
+#Service detection
+sudo nmap -sV <host>
+```
+
 
 #### Maintaining Services
 ##### systemctl
@@ -226,16 +254,81 @@ journalctl -k
 
 ### Windows Team
 
-
 ### Linux Team
+
+**tcpdump**
+```bash
+tcpdump -lnn -i any port ssh and tcp-syn
+```
+**ss**
+```bash
+# print socket statistics as they are destroyed
+# this would be great if there were time to configure tmux or screen
+ss -E 
+
+# discover which user opened ssh
+ss -lp | grep ssh
+
+# show processes using sockets, this may reveal an uid on the rightmost column
+# if so, follow up with the second command:
+ss -ltpe 
+getent passwd | grep <uid>
+
+# display all established SMTP connections
+ss -o state established '( dport = :smtp or sport = :smtp )'
+
+# display All established HTTP connections
+ss -o state established '( dport = :http or sport = :http )'
+
+# find All Local Processes Connected To X Server (Note: X Server revers to local Xorg server)
+ss -x src /tmp/.X11-unix/*
+```
+
+#  
+
+
+**ps**
+
+**pstree**
+
+
 
 #### File Permissions
 
-|  |Owner|Group|Other|
+Every file and folder has an access mode that describes *who* can do *what*
+*who = user=u,group=g, or other=o*
+*what = read=r,write=w,execute=x* 
+
+|  |User |Group|Other|
 |--|-----|-----|-----|
 |r |  4  |  4  |  4  |
 |w |  2  |  2  |  2  |
 |x |  1  |  1  |  1  |
+
+- 0777 means u=rwx g=rwx o=rwx ; everyone has read write execute permissions
+- 0700 means u=rwx g=--- o=---
+- 0000 means lock the door and throw away the key
+
+**chmod**
+```bash
+# change access mode of a folder or file
+# general usage: 
+chmod [OPTION] MODE[,MODE] FILE
+
+chmod 700 
+chmod 077 /boot /etc/{iptables,artptables}
+chmod -R 
+```
+**chown**
+```bash
+# chown differs from chmod in that it changes only the user and the not the access mode
+# change ownership of a file to <user>:<group>
+chown <user>:<group> /path/to/file
+# change ownership to admin of a folder and all subfolders
+chown -hR admin /directory
+# exchange ownership of all files from <badguy> to <goodguy>
+chown -R --from=<badguy> <gooduy> /
+```
 
 **find**
 ```bash
@@ -255,30 +348,67 @@ find /path/to/file -name "*.sh" -user usera -o userb -ls
 find /path/to/file -user <badguy> -delete
 ```
 
-**chown**
-```bash
-# change ownership of a file to <user>:<group>
-chown <user>:<group> /path/to/file
-# change ownership to admin of a folder and all subfolders
-chown -hR admin /directory
-
-```
-**chmod**
-|  |Owner|Group|Other|
-|--|-----|-----|-----|
-|r |  4  |  4  |  4  |
-|w |  2  |  2  |  2  |
-|x |  1  |  1  |  1  |
-```bash
-# change access mode of a folder or file
-chmod <o,g,e>
-# 
-chmod 0700 
-chmod 0077 /boot /etc/{iptables,artptables}
-```
 **kill**
 ```bash
 #
+```
+**ufw**
+```bash
+# genral usage
+sudo ufw default <deny/allow> <incoming/outgoing> <port/protocol>
+
+# disable or enable ufw like this
+sudo ufw <enable/disable>
+
+# show rules 
+sudo ufw status
+sudo ufw status numbered
+sudo ufw status verbose
+
+# open ports like this
+sudo ufw allow <port/protocol>
+
+# allow ssh over tcp or udp
+sudo ufw allow 22
+sudo ufw allow 22/tcp
+sudo ufw allow 22/udp
+
+# close ports like this
+sudo ufw deny <port/protocol> 
+
+# deny ssh  
+sudo ufw deny 22/tcp
+
+# you can also allow or deny services in /etc/services
+sudo ufw <allow/deny> <service name>
+# example Usage:
+sudo ufw allow ssh
+
+# you can delete existing rules like this
+sudo ufw delete allow 22/tcp
+sudo ufw delete deny ssh
+
+# you can delete existing rules by number 
+sudu ufw delete <n>
+
+
+```
+
+
+
+**iptables**
+```bash
+# open incoming traffic from port 80
+iptables -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT 
+
+# accept incoming traffic from port 22 from <address> over tcp
+iptables -A INPUT -p tcp -s <address> -m tcp --dport 22 -j ACCEPT 
+
+# deny outgoing traffic port 22 from <address> 
+iptabled -A OUTPUT -p tco -s <addrss> -m tcp --dport 22 -j DENY
+
+# flush all rules
+iptables -F  
 ```
 
 #### Maintaining Services
