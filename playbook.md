@@ -229,11 +229,11 @@ journalctl -k
 
 #### File Permissions
 
-|       |	Owner   |	Group 	|	Other   |
-|-------|---------------|---------------|---------------|
-|r	|	4	|	4	|	4 	|
-|w	|	2	|	2	|	2	|
-|x	|	1	|	1	|	1	|
+|  |Owner   |	Group 	|	Other   |
+|--|---|---|---|
+|r | 4 | 4 | 4 |
+|w | 2 | 2 | 2 |
+|x | 1 | 1 | 1 |
 
 **find**
 ```bash
@@ -300,8 +300,8 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDA4NDI3MjUsLTM4OTQzODk3NSwtMT
-QzODE3MTI0MiwtNzY1NTc4NjM2LC0xODMwNjQzMDQ0LC0xODk2
-MzQwMjc0LDE3MTg3ODYzNjQsMTcwMjU3OTc2MiwyMjA0NjQ2Mj
-ksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ==
+eyJoaXN0b3J5IjpbMjM0NTAxNDQwLC0zODk0Mzg5NzUsLTE0Mz
+gxNzEyNDIsLTc2NTU3ODYzNiwtMTgzMDY0MzA0NCwtMTg5NjM0
+MDI3NCwxNzE4Nzg2MzY0LDE3MDI1Nzk3NjIsMjIwNDY0NjI5LD
+E0OTM4MDE4NjgsMTc0NjEzMTMyXX0=
 -->
