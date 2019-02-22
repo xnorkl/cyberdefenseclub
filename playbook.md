@@ -231,14 +231,12 @@ journalctl -k
 
 |       |	r       |	w 	|	x       |
 |-------|---------------|---------------|---------------|
-|Owner	|	1	|	3	|	4 	|
-|Group	|	1	|	3	|	4	|
-|Other 	|	1	|	3	|	4	|
-**chmod**
-```bash
-#
-chmod 0077 /boot /etc/{iptables,artptables}
-```
+|Owner	|	4	|	2	|	1 	|
+|Group	|	4	|	2	|	1	|
+|Other 	|	4	|	2	|	1	|
+
+**chmod
+
 **find**
 ```bash
 # Note: /path/to/file refers to any path (. ./ /home /etc ..)
@@ -300,8 +298,8 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4OTQzODk3NSwtMTQzODE3MTI0MiwtNz
-Y1NTc4NjM2LC0xODMwNjQzMDQ0LC0xODk2MzQwMjc0LDE3MTg3
-ODYzNjQsMTcwMjU3OTc2MiwyMjA0NjQ2MjksMTQ5MzgwMTg2OC
-wxNzQ2MTMxMzJdfQ==
+eyJoaXN0b3J5IjpbMzM3MjA1Mjg3LC0zODk0Mzg5NzUsLTE0Mz
+gxNzEyNDIsLTc2NTU3ODYzNiwtMTgzMDY0MzA0NCwtMTg5NjM0
+MDI3NCwxNzE4Nzg2MzY0LDE3MDI1Nzk3NjIsMjIwNDY0NjI5LD
+E0OTM4MDE4NjgsMTc0NjEzMTMyXX0=
 -->
