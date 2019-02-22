@@ -231,7 +231,7 @@ journalctl -k
 
 |       |	r       |	w 	|	x       |
 |-------|---------------|---------------|---------------|
-|Owner	|	1	|	3	|	4 	|
+|Owner	|	14|	3	|	4 	|
 |Group	|	1	|	3	|	4	|
 |Other 	|	1	|	3	|	4	|
 **chmod**
@@ -300,11 +300,11 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4OTQzODk3NSwtMTQzODE3MTI0MiwtNz
-Y1NTc4NjM2LC0xODMwNjQzMDQ0LC0xODk2MzQwMjc0LDE3MTg3
-ODYzNjQsMjA5ODk5MjE0NiwtMTgwNDQ4NzE3NSwxODM0NzA0OT
-Y3LDExOTAxMjk1OTEsMTcwMjU3OTc2MiwxNDUyNDY0MzI0LDEz
-NDQ5Mjk2MDYsLTg4NjcyODM5NCwtMTEyNjMwMTA2NCwxNzMzND
-gzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2NDYyOSwxNDkzODAxODY4
-LDE3NDYxMzEzMl19
+eyJoaXN0b3J5IjpbLTc5Mjc0NzAwMSwtMzg5NDM4OTc1LC0xND
+M4MTcxMjQyLC03NjU1Nzg2MzYsLTE4MzA2NDMwNDQsLTE4OTYz
+NDAyNzQsMTcxODc4NjM2NCwyMDk4OTkyMTQ2LC0xODA0NDg3MT
+c1LDE4MzQ3MDQ5NjcsMTE5MDEyOTU5MSwxNzAyNTc5NzYyLDE0
+NTI0NjQzMjQsMTM0NDkyOTYwNiwtODg2NzI4Mzk0LC0xMTI2Mz
+AxMDY0LDE3MzM0ODMzNzIsLTEyMTkzMzU1NzUsMjIwNDY0NjI5
+LDE0OTM4MDE4NjhdfQ==
 -->
