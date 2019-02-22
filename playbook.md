@@ -267,7 +267,7 @@ chown
 **chmod**
 ```bash
 # 
-chmod 
+chmod 0700 
 chmod 0077 /boot /etc/{iptables,artptables}
 ```
 **kill**
@@ -307,7 +307,7 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM0MjQxODQ3LC0zODk0Mzg5NzUsLTE0Mz
+eyJoaXN0b3J5IjpbNDQ3ODU1NTU4LC0zODk0Mzg5NzUsLTE0Mz
 gxNzEyNDIsLTc2NTU3ODYzNiwtMTgzMDY0MzA0NCwtMTg5NjM0
 MDI3NCwxNzE4Nzg2MzY0LDE3MDI1Nzk3NjIsMjIwNDY0NjI5LD
 E0OTM4MDE4NjgsMTc0NjEzMTMyXX0=
