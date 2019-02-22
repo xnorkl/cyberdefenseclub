@@ -261,9 +261,15 @@ chown <user>:<group> /path/to/file
 chown -hR admin /directory
 
 ```
-
 **chmod**
+|  |Owner|Group|Other|
+|--|-----|-----|-----|
+|r |  4  |  4  |  4  |
+|w |  2  |  2  |  2  |
+|x |  1  |  1  |  1  |
 ```bash
+# modify 
+chmod <o,g,e>
 # 
 chmod 0700 
 chmod 0077 /boot /etc/{iptables,artptables}
@@ -305,11 +311,11 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTk5MzUzMDQsNDQ3ODU1NTU4LC0zOD
-k0Mzg5NzUsLTE0MzgxNzEyNDIsLTc2NTU3ODYzNiwtMTgzMDY0
-MzA0NCwtMTg5NjM0MDI3NCwxNzE4Nzg2MzY0LDIwOTg5OTIxND
-YsLTE4MDQ0ODcxNzUsMTgzNDcwNDk2NywxMTkwMTI5NTkxLDE3
-MDI1Nzk3NjIsMTQ1MjQ2NDMyNCwxMzQ0OTI5NjA2LC04ODY3Mj
-gzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMzNTU3
-NSwyMjA0NjQ2MjldfQ==
+eyJoaXN0b3J5IjpbNjIyNjc5MjgwLDQ0Nzg1NTU1OCwtMzg5ND
+M4OTc1LC0xNDM4MTcxMjQyLC03NjU1Nzg2MzYsLTE4MzA2NDMw
+NDQsLTE4OTYzNDAyNzQsMTcxODc4NjM2NCwyMDk4OTkyMTQ2LC
+0xODA0NDg3MTc1LDE4MzQ3MDQ5NjcsMTE5MDEyOTU5MSwxNzAy
+NTc5NzYyLDE0NTI0NjQzMjQsMTM0NDkyOTYwNiwtODg2NzI4Mz
+k0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkzMzU1NzUs
+MjIwNDY0NjI5XX0=
 -->
