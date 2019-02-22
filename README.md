@@ -268,8 +268,7 @@ chown -hR admin /directory
 |w |  2  |  2  |  2  |
 |x |  1  |  1  |  1  |
 ```bash
-# modify 
-# change access mode of a folder
+# change access mode of a folder or file
 chmod <o,g,e>
 # 
 chmod 0700 
@@ -312,11 +311,11 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEzMTE4MzA4LDQ0Nzg1NTU1OCwtMzg5ND
-M4OTc1LC0xNDM4MTcxMjQyLC03NjU1Nzg2MzYsLTE4MzA2NDMw
-NDQsLTE4OTYzNDAyNzQsMTcxODc4NjM2NCwyMDk4OTkyMTQ2LC
-0xODA0NDg3MTc1LDE4MzQ3MDQ5NjcsMTE5MDEyOTU5MSwxNzAy
-NTc5NzYyLDE0NTI0NjQzMjQsMTM0NDkyOTYwNiwtODg2NzI4Mz
-k0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkzMzU1NzUs
-MjIwNDY0NjI5XX0=
+eyJoaXN0b3J5IjpbLTE0NDEzMzQ3NTQsNDQ3ODU1NTU4LC0zOD
+k0Mzg5NzUsLTE0MzgxNzEyNDIsLTc2NTU3ODYzNiwtMTgzMDY0
+MzA0NCwtMTg5NjM0MDI3NCwxNzE4Nzg2MzY0LDIwOTg5OTIxND
+YsLTE4MDQ0ODcxNzUsMTgzNDcwNDk2NywxMTkwMTI5NTkxLDE3
+MDI1Nzk3NjIsMTQ1MjQ2NDMyNCwxMzQ0OTI5NjA2LC04ODY3Mj
+gzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMzNTU3
+NSwyMjA0NjQ2MjldfQ==
 -->
