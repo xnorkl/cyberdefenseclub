@@ -257,18 +257,17 @@ find /path/to/file -user <badguy> -delete
 |r |  4  |  4  |  4  |
 |w |  2  |  2  |  2  |
 |x |  1  |  1  |  1  |
-
- 
-
 **chown**
 ```bash
 # 
+chown 
 
 ```
 
 **chmod**
 ```bash
 # 
+chmod 0700 
 chmod 0077 /boot /etc/{iptables,artptables}
 ```
 **kill**
@@ -308,11 +307,11 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMTY1NjgzOSwtMzg5NDM4OTc1LC0xND
-M4MTcxMjQyLC03NjU1Nzg2MzYsLTE4MzA2NDMwNDQsLTE4OTYz
-NDAyNzQsMTcxODc4NjM2NCwyMDk4OTkyMTQ2LC0xODA0NDg3MT
-c1LDE4MzQ3MDQ5NjcsMTE5MDEyOTU5MSwxNzAyNTc5NzYyLDE0
-NTI0NjQzMjQsMTM0NDkyOTYwNiwtODg2NzI4Mzk0LC0xMTI2Mz
-AxMDY0LDE3MzM0ODMzNzIsLTEyMTkzMzU1NzUsMjIwNDY0NjI5
-LDE0OTM4MDE4NjhdfQ==
+eyJoaXN0b3J5IjpbNDQ3ODU1NTU4LC0zODk0Mzg5NzUsLTE0Mz
+gxNzEyNDIsLTc2NTU3ODYzNiwtMTgzMDY0MzA0NCwtMTg5NjM0
+MDI3NCwxNzE4Nzg2MzY0LDIwOTg5OTIxNDYsLTE4MDQ0ODcxNz
+UsMTgzNDcwNDk2NywxMTkwMTI5NTkxLDE3MDI1Nzk3NjIsMTQ1
+MjQ2NDMyNCwxMzQ0OTI5NjA2LC04ODY3MjgzOTQsLTExMjYzMD
+EwNjQsMTczMzQ4MzM3MiwtMTIxOTMzNTU3NSwyMjA0NjQ2Mjks
+MTQ5MzgwMTg2OF19
 -->
