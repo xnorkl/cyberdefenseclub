@@ -243,8 +243,9 @@ chmod 0077 /boot /etc/{iptables,artptables}
 ```bash
 # print files owned by a user
 find /directory/path -user <user>
-# print files owned by a user
-find /directory/path -user <user>
+# print .ext files owned by a user
+find /directory/path -user <user> -name "*.ext"
+
 ```
 
 **chown**
@@ -287,7 +288,7 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTQ5MDE5NDYsMTcxODc4NjM2NCwxNz
-AyNTc5NzYyLDIyMDQ2NDYyOSwxNDkzODAxODY4LDE3NDYxMzEz
-Ml19
+eyJoaXN0b3J5IjpbLTI1ODI1NDg0MCwxNzE4Nzg2MzY0LDE3MD
+I1Nzk3NjIsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMy
+XX0=
 -->
