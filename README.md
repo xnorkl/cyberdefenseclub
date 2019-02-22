@@ -241,13 +241,13 @@ chmod 0077 /boot /etc/{iptables,artptables}
 ```
 **find**
 ```bash
-# Note: /directory/path refers to any path, i.e. . ../ / /home /etc ..
+# Note: /path/to/file refers to any path (. ./ /home /etc ..)
 # print files owned by a user
-find /directory/path -user <user>
+find /path/to/file -user <user>
 # print .ext files owned by a user
-find /directory/path -user <user> -name "*.ext"
+find /path/to/file -user <user> -name "*.ext"
 # you can do the same but by group 
-find /directory/path -group <group> -name "*.ext"
+find /path/to/file -group <group> -name "*.ext"
 # print all shell files owned by a user and 
 ```
 
@@ -291,10 +291,10 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzA2NDMwNDQsLTE4OTYzNDAyNzQsMT
-cxODc4NjM2NCwyMDk4OTkyMTQ2LC0xODA0NDg3MTc1LDE4MzQ3
-MDQ5NjcsMTE5MDEyOTU5MSwxNzAyNTc5NzYyLDE0NTI0NjQzMj
-QsMTM0NDkyOTYwNiwtODg2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3
-MzM0ODMzNzIsLTEyMTkzMzU1NzUsMjIwNDY0NjI5LDE0OTM4MD
-E4NjgsMTc0NjEzMTMyXX0=
+eyJoaXN0b3J5IjpbLTc2NTU3ODYzNiwtMTgzMDY0MzA0NCwtMT
+g5NjM0MDI3NCwxNzE4Nzg2MzY0LDIwOTg5OTIxNDYsLTE4MDQ0
+ODcxNzUsMTgzNDcwNDk2NywxMTkwMTI5NTkxLDE3MDI1Nzk3Nj
+IsMTQ1MjQ2NDMyNCwxMzQ0OTI5NjA2LC04ODY3MjgzOTQsLTEx
+MjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIxOTMzNTU3NSwyMjA0Nj
+Q2MjksMTQ5MzgwMTg2OCwxNzQ2MTMxMzJdfQ==
 -->
