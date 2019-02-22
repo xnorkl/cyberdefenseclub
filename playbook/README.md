@@ -183,7 +183,9 @@ auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/t
 **nmap**
 
 **ss**
-
+```bash
+ss -ltp
+```
 **ps**
 
 **pstree**
@@ -229,22 +231,55 @@ journalctl -k
 
 #### File Permissions
 
-|       |	r       |	w 	|	x       |
-|-------|---------------|---------------|---------------|
-|Owner	|	1	|	3	|	4 	|
-|Group	|	1	|	3	|	4	|
-|Other 	|	1	|	3	|	4	|
-**chmod**
+|  |Owner|Group|Other|
+|--|-----|-----|-----|
+|r |  4  |  4  |  4  |
+|w |  2  |  2  |  2  |
+|x |  1  |  1  |  1  |
+
+**find**
 ```bash
-#
-chmod 0077 /boot /etc/{iptables,artptables}
+# Note: /path/to/file refers to any path (. ./ /home /etc ..)
+# print files owned by a user
+find /path/to/file -user <user>
+# print .ext files owned by a user
+find /path/to/file -user <user> -name "*.ext"
+# you can do the same but by group 
+find /path/to/file -group <group> -name "*.ext"
+# print all shell files owned by usera and userb with ls formatting
+find /path/to/file -name "*.sh" -user usera userb -ls
+# you can also use logical operators
+# -o -or, ! -not, -a -and (^^implicit without operators)
+find /path/to/file -name "*.sh" -user usera -o userb -ls
+# delete all files owned by a user
+find /path/to/file -user <badguy> -delete
 ```
 
 **chown**
+```bash
+# change ownership of a file to <user>:<group>
+chown <user>:<group> /path/to/file
+# change ownership to admin of a folder and all subfolders
+chown -hR admin /directory
 
+```
+**chmod**
+|  |Owner|Group|Other|
+|--|-----|-----|-----|
+|r |  4  |  4  |  4  |
+|w |  2  |  2  |  2  |
+|x |  1  |  1  |  1  |
+```bash
+# change access mode of a folder or file
+chmod <o,g,e>
+# 
+chmod 0700 
+chmod 0077 /boot /etc/{iptables,artptables}
+```
 **kill**
-
-**find**
+```bash
+#
+```
 
 #### Maintaining Services
 ##### systemctl
@@ -278,9 +313,9 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxODc4NjM2NCwyMDk4OTkyMTQ2LC0xOD
-A0NDg3MTc1LDE4MzQ3MDQ5NjcsMTE5MDEyOTU5MSwxNzAyNTc5
-NzYyLDE0NTI0NjQzMjQsMTM0NDkyOTYwNiwtODg2NzI4Mzk0LC
-0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkzMzU1NzUsMjIw
-NDY0NjI5XX0=
+eyJoaXN0b3J5IjpbLTM1ODI2NzcyMSwxNzE4Nzg2MzY0LDIwOT
+g5OTIxNDYsLTE4MDQ0ODcxNzUsMTgzNDcwNDk2NywxMTkwMTI5
+NTkxLDE3MDI1Nzk3NjIsMTQ1MjQ2NDMyNCwxMzQ0OTI5NjA2LC
+04ODY3MjgzOTQsLTExMjYzMDEwNjQsMTczMzQ4MzM3MiwtMTIx
+OTMzNTU3NSwyMjA0NjQ2MjldfQ==
 -->
