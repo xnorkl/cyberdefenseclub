@@ -229,11 +229,11 @@ journalctl -k
 
 #### File Permissions
 
-|  |Owner   |	Group 	|	Other   |
-|--|---|---|---|
-|r | 4 | 4 | 4 |
-|w | 2 | 2 | 2 |
-|x | 1 | 1 | 1 |
+|  |Owner|Group|Other|
+|--|-----|-----|-----|
+|r |  4  |  4  |  4  |
+|w |  2  |  2  |  2  |
+|x |  1  |  1  |  1  |
 
 **find**
 ```bash
@@ -252,6 +252,11 @@ find /path/to/file -name "*.sh" -user usera -o userb -ls
 # delete all files owned by a user
 find /path/to/file -user <badguy> -delete
 ```
+|  |Owner|Group|Other|
+|--|-----|-----|-----|
+|r |  4  |  4  |  4  |
+|w |  2  |  2  |  2  |
+|x |  1  |  1  |  1  |
 
 **chown**
 ```bash
@@ -300,11 +305,11 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM0NTAxNDQwLC0zODk0Mzg5NzUsLTE0Mz
-gxNzEyNDIsLTc2NTU3ODYzNiwtMTgzMDY0MzA0NCwtMTg5NjM0
-MDI3NCwxNzE4Nzg2MzY0LDIwOTg5OTIxNDYsLTE4MDQ0ODcxNz
-UsMTgzNDcwNDk2NywxMTkwMTI5NTkxLDE3MDI1Nzk3NjIsMTQ1
-MjQ2NDMyNCwxMzQ0OTI5NjA2LC04ODY3MjgzOTQsLTExMjYzMD
-EwNjQsMTczMzQ4MzM3MiwtMTIxOTMzNTU3NSwyMjA0NjQ2Mjks
-MTQ5MzgwMTg2OF19
+eyJoaXN0b3J5IjpbLTE2NjE0MjYwODMsLTM4OTQzODk3NSwtMT
+QzODE3MTI0MiwtNzY1NTc4NjM2LC0xODMwNjQzMDQ0LC0xODk2
+MzQwMjc0LDE3MTg3ODYzNjQsMjA5ODk5MjE0NiwtMTgwNDQ4Nz
+E3NSwxODM0NzA0OTY3LDExOTAxMjk1OTEsMTcwMjU3OTc2Miwx
+NDUyNDY0MzI0LDEzNDQ5Mjk2MDYsLTg4NjcyODM5NCwtMTEyNj
+MwMTA2NCwxNzMzNDgzMzcyLC0xMjE5MzM1NTc1LDIyMDQ2NDYy
+OSwxNDkzODAxODY4XX0=
 -->
