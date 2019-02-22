@@ -241,7 +241,10 @@ chmod 0077 /boot /etc/{iptables,artptables}
 ```
 **find**
 ```bash
-find /directory/path 
+# print files owned by a user
+find /directory/path -user <user>
+# print files owned by a user
+find /directory/path -user <user>
 ```
 
 **chown**
@@ -284,10 +287,10 @@ journalctl -u <service>
 journalctl -k
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM3NzI4MjUsMTcxODc4NjM2NCwyMDk4OT
-kyMTQ2LC0xODA0NDg3MTc1LDE4MzQ3MDQ5NjcsMTE5MDEyOTU5
-MSwxNzAyNTc5NzYyLDE0NTI0NjQzMjQsMTM0NDkyOTYwNiwtOD
-g2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEyMTkz
-MzU1NzUsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMTMyXX
-0=
+eyJoaXN0b3J5IjpbLTE3MTQ5MDE5NDYsMTcxODc4NjM2NCwyMD
+k4OTkyMTQ2LC0xODA0NDg3MTc1LDE4MzQ3MDQ5NjcsMTE5MDEy
+OTU5MSwxNzAyNTc5NzYyLDE0NTI0NjQzMjQsMTM0NDkyOTYwNi
+wtODg2NzI4Mzk0LC0xMTI2MzAxMDY0LDE3MzM0ODMzNzIsLTEy
+MTkzMzU1NzUsMjIwNDY0NjI5LDE0OTM4MDE4NjgsMTc0NjEzMT
+MyXX0=
 -->
