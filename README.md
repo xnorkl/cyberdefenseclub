@@ -4,8 +4,6 @@
 Official playbook for AU-ACM Cyber Defense Club 
 
 
-# Table of Contents
-
 ## Primary Goals
 CCDC is a yearly blue vs red competition.
 
@@ -14,9 +12,6 @@ The objective: maintain up time of an enterprise network and its primary service
 The enterprise network architecture changes each year,
 meaning each year team composition should change to meet the challenges presented by the newest iteration of the play field.
 
-/add image here/
-
-## Scoring
 
 ## Team Composition
 Our team composition this year is a close mapping of the enterprise architecture, with Captain and Change Control Officer designated to carry out tasking injections to any of three teams: Windows, Unix, and Firewall administration.
@@ -75,7 +70,7 @@ The entire team is responsible for maintaining fundamental services:
 
 Each team is responsible maintaining the services under their purview:
 - #### Firewall
-	- Egress and Ingress Rules for all fundamental services
+	- Incoming and Outgoing Rules for all fundamental services
 - #### Windows
 	- AD DNS 
 	- Webmail-HTTP
@@ -172,6 +167,13 @@ sudo chown <admin>:wheel /bin/su
 auth optional pam_faildelay.so delay=4000000
 auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/tallylog
 ```
+```bash
+# secure ssh files access mode
+
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/*
+chown -R $USER ~/.ssh
+```
 
 ```bash
 /etc/security/limits.conf
@@ -180,6 +182,7 @@ auth required pam_tally2.so deny=3 unlock_time=600 onerr=succeed file=/var/log/t
 * soft nproc 100
 * hard nproc 200
 ```
+
 ## Enumeration
 ### Firewall
 ### Windows
