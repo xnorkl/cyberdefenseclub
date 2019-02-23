@@ -255,6 +255,24 @@ journalctl -k
 
 ### Windows Team
 
+```powershell
+# to display both the Ethernet statistics and the statistics for all protocols, type:
+
+netstat -e -s
+
+# to display the statistics for only the TCP and UDP protocols, type:
+
+netstat -s -p tcp udp
+
+# to display active TCP connections and the process IDs every 5 seconds, type:
+
+netstat -o 5
+
+# to display active TCP connections and the process IDs using numerical form, type:
+
+netstat -n -o
+```
+
 ### Linux Team
 
 **tcpdump**
@@ -419,44 +437,3 @@ iptabled -A OUTPUT -p tco -s <addrss> -m tcp --dport 22 -j DENY
 # flush all rules
 iptables -F  
 ```
-
-#### Maintaining Services
-##### systemctl
-```bash
-# to get service status:
-systemctl status <service>  # you can omit <service> to list all as a tree
-# to list running services or failed services:
-systemctl | grep running
-systemctl --failed
-# to start, stop, restart a status: 
-systemctl start <status>
-systemctl restart <status>
-systemctl stop <status>
-# to enable or disable a service:
-systemctl enable <service>
-systemctl disable <service>
-```
-##### journalctl
-```bash
-# show all messages since 20 minutes ago:    
-journalctl --since "20 min ago"
-# follow new messages:
-journalctl -f
-# show all messages by a specific executable:
-journalctl /usr/lib/systemd/systemd
-# show all messages by a specific process:
-journalctl _PID=1
-# show all messages by a specific unit:
-journalctl -u <service>
-# show kernel ring buffer:
-journalctl -k
-```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1ODI2NzcyMSwtMTQ0MTMzNDc1NCw0ND
-c4NTU1NTgsLTM4OTQzODk3NSwtMTQzODE3MTI0MiwtNzY1NTc4
-NjM2LC0xODMwNjQzMDQ0LC0xODk2MzQwMjc0LDE3MTg3ODYzNj
-QsMjA5ODk5MjE0NiwtMTgwNDQ4NzE3NSwxODM0NzA0OTY3LDEx
-OTAxMjk1OTEsMTcwMjU3OTc2MiwxNDUyNDY0MzI0LDEzNDQ5Mj
-k2MDYsLTg4NjcyODM5NCwtMTEyNjMwMTA2NCwxNzMzNDgzMzcy
-LC0xMjE5MzM1NTc1XX0=
--->
