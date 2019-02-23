@@ -113,7 +113,7 @@ Sconfig
 
 *Remove-MsolRoleMember*
 ```powershell
-	Remove-MsolRoleMember -RoleName "SuspiciousAdministrator" -RoleMemberType User 
+Remove-MsolRoleMember -RoleName "SuspiciousAdministrator" -RoleMemberType User 
 ```
 *log successful and failed logins*
 ```powershell
