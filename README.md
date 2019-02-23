@@ -292,12 +292,15 @@ netstat -o 5
 netstat -n -o
 ```
 **netsh**
+```powershell
 # from an elevated prompt
 netsh trace start persistent=yes capture=yes tracefile=c:\temp\nettrace-boot.etl
 # record or reproduce, then stop
 netsh trace stop
 
 # open tracefile with netmon
+```
+**logoff**
 ```powershell
 # search for user and return sessionid
 $userName = 'user'
