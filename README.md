@@ -419,8 +419,7 @@ chown -R --from=<badguy> <gooduy> /
 ```
 **chattr and lsattr**
 
-chattr changes file attributes*
-*they are:*
+chattr changes file attributes. They are:*
 
     a: append only
     c: compressed
