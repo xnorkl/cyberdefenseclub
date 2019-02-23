@@ -418,8 +418,8 @@ chown -hR admin /directory
 chown -R --from=<badguy> <gooduy> /
 ```
 **chattr and lsattr**
-*chattr changes file attributes*
 
+chattr changes file attributes*
 *they are:*
 
     a: append only
