@@ -99,17 +99,30 @@ The initial step breaks down neatly into three smaller, consecutive steps:
 &nbsp;&nbsp;3. Define Firewall Rules   
 
 #### - Windows Team
-&nbsp;&nbsp;1. Change Default Credentials
-
-&nbsp;&nbsp;2. Create an Admin Account
+&nbsp;&nbsp;1. Change Admin Account
+```powershell
+Set-AdAccountPassword -Identity $AccountName -OldPassword (Read-Host -asSecureString "Enter the current password") -NewPassword (Read-Host -asSecureString "Enter the new password")
+```
+&nbsp;&nbsp;2. Admin Account Configuration
+```powerhsell
+# straight forward but limited
+Sconfig
+```
 
 &nbsp;&nbsp;3. Restrict Login Access
 
-log successful and failed logins
+*Remove-MsolRoleMember*
+```powershell
+	Remove-MsolRoleMember -RoleName "SuspiciousAdministrator" -RoleMemberType User 
+```
+*log successful and failed logins*
 ```powershell
 auditpol.exe /set /category:"Logon/Logoff"  /success:enable /failure:enable | out-null
 ```
-
+*if changing hostname come up:*
+```powershell
+Rename-Computer -NewName <name> -DomainCredential <domain>\Administrator -PassThru
+```
 #### - Linux Team
 
 &nbsp;1. change default user credentials
@@ -186,6 +199,15 @@ chown -R $USER ~/.ssh
 ## Enumeration
 ### Firewall
 ### Windows
+
+```powershell
+net view
+
+ipconfig
+
+# return ip and services on mysql servers
+$pingSweep | Where-Object { $_.Ports -eq “3306” }
+```
 ### Linux 
 
 **nmap**
@@ -255,24 +277,51 @@ journalctl -k
 
 ### Windows Team
 
+**netstat**
 ```powershell
 # to display both the Ethernet statistics and the statistics for all protocols, type:
-
 netstat -e -s
 
 # to display the statistics for only the TCP and UDP protocols, type:
-
 netstat -s -p tcp udp
 
 # to display active TCP connections and the process IDs every 5 seconds, type:
-
 netstat -o 5
 
 # to display active TCP connections and the process IDs using numerical form, type:
-
 netstat -n -o
 ```
+**netsh**
+# from an elevated prompt
+netsh trace start persistent=yes capture=yes tracefile=c:\temp\nettrace-boot.etl
+# record or reproduce, then stop
+netsh trace stop
 
+# open tracefile with netmon
+```powershell
+# search for user and return sessionid
+$userName = 'user'
+$sessionId = ((quser /server:DC | Where-Object { $_ -match $userName }) -split ' +')[2]
+$sessionId
+# log off user
+logoff $sessionId /server:DC
+```
+**tasklist**
+```powershell
+# tasklist menu
+tasklist /?
+
+# ps aux equivalent
+tasklist /v
+```
+**taskkill**
+```powershell
+# taskill works similar to kill
+taskkill /s <address> /u <name> /p <password> /im <processname>
+
+# kill -9
+taskkill /f /pid <pid>
+```
 ### Linux Team
 
 **tcpdump**
@@ -365,7 +414,10 @@ chown -hR admin /directory
 # exchange ownership of all files from <badguy> to <goodguy>
 chown -R --from=<badguy> <gooduy> /
 ```
-
+**chattr**
+```bash
+chattr +i <file>
+```
 **find**
 ```bash
 # Note: /path/to/file refers to any path (. ./ /home /etc ..)
