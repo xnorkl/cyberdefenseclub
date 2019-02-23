@@ -288,18 +288,28 @@ ss -o state established '( dport = :http or sport = :http )'
 # display all estalblished connections to the mySQL server
 ss dst 172.20.240.20:3306
 ```
-#  
-
 **ps**
+
 ```bash
+# display processes by user
+ps -fU <user>
+ps -fu <uid>
+
+# all processes running as root
+ps -u 0 -u root
+
+# detailed list of processes on tty1
+ps -e --forest -ft tty1
+
+# detailed list 
+ps -p 999 -e --forest -o pid,ppid,fgroup,ni,lstart,etime
+
+# monitor processes
+watch -n 1 'ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head'
 
 ```
-
-**pstree**
-```bash
-
-```
-
+**kill**
+kill -9 <pid>
 
 #### File Permissions
 
@@ -356,10 +366,6 @@ find /path/to/file -name "*.sh" -user usera -o userb -ls
 find /path/to/file -user <badguy> -delete
 ```
 
-**kill**
-```bash
-#
-```
 **ufw**
 ```bash
 # genral usage
