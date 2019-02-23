@@ -164,7 +164,6 @@ sudo chown <admin>:wheel /bin/su
 #####  &nbsp;&nbsp;&nbsp;&nbsp;**Use sudo -i -u adminname when performing admin tasks!*
 
 &nbsp; 3. Restrict Login Access  
-
 ```bash
 /etc/pam.d/system-login
 
@@ -217,7 +216,6 @@ sudo nmap -F <host>
 sudo nmap -sV <host>
 ```
 
-
 #### Maintaining Services
 ##### systemctl
 ```bash
@@ -258,6 +256,7 @@ journalctl -k
 
 **tcpdump**
 ```bash
+# if packet capturing is needed we can do so on any linux device, but we'll mostly do that from the firewall
 tcpdump -lnn -i any port ssh and tcp-syn
 ```
 **ss**
@@ -265,6 +264,9 @@ tcpdump -lnn -i any port ssh and tcp-syn
 # print socket statistics as they are destroyed
 # this would be great if there were time to configure tmux or screen
 ss -E 
+
+# summary of connections mainly for checking udp and tcp numbers
+ss -s
 
 # discover which user opened ssh
 ss -lp | grep ssh
@@ -277,20 +279,23 @@ getent passwd | grep <uid>
 # display all established SMTP connections
 ss -o state established '( dport = :smtp or sport = :smtp )'
 
-# display All established HTTP connections
+# display all established HTTP connections
 ss -o state established '( dport = :http or sport = :http )'
 
-# find All Local Processes Connected To X Server (Note: X Server revers to local Xorg server)
-ss -x src /tmp/.X11-unix/*
+# display all estalblished connections to the mySQL server
+ss dst 172.20.240.20:3306
 ```
-
 #  
 
-
 **ps**
+```bash
+
+```
 
 **pstree**
+```bash
 
+```
 
 
 #### File Permissions
@@ -390,12 +395,7 @@ sudo ufw delete deny ssh
 
 # you can delete existing rules by number 
 sudu ufw delete <n>
-
-
 ```
-
-
-
 **iptables**
 ```bash
 # open incoming traffic from port 80
