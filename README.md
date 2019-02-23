@@ -417,9 +417,36 @@ chown -hR admin /directory
 # exchange ownership of all files from <badguy> to <goodguy>
 chown -R --from=<badguy> <gooduy> /
 ```
-**chattr**
+**chattr and lsattr**
+*chattr changes file attributes*
+*they are:*
+    a: append only
+    c: compressed
+    d: no dump
+    e: extent format
+    i: immutable
+    j: data journalling
+    s: secure deletion
+    t: no tail-merging
+    u: undeletable
+    A: no atime updates
+    C: no copy on write
+    D: synchronous directory updates
+    S: synchronous updates
+    T: top of directory hierarchy
+	
 ```bash
+# make a file immutable
 chattr +i <file>
+
+# unset immutable
+chattr -i <file>
+
+# you can recur
+chattr -R +i /etc
+
+#list file attributes
+lsattr -R /etc
 ```
 **find**
 ```bash
