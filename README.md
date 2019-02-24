@@ -130,7 +130,7 @@ Rename-Computer -NewName <name> -DomainCredential <domain>\Administrator -PassTh
 # change default password for default login
 passwd
 # open a root shell and change root password
-sudo -i 
+-i 
 passwd
 usermod -l <newname> <oldname>
 usermod -d ~/home/<newname> -m <newname>
@@ -143,7 +143,7 @@ ln -s ~/home/<newname> ~/home/<oldname>
 ```bash
 groupadd wheel
 ```
-*Restrict the use of sudo to the wheel group by configuring **/etc/sudoers**.*
+*Restrict the use of to the wheel group by configuring **/etc/sudoers**.*
 *Use **visudo** and uncomment the following:*
 ```bash
 # option A: faster
@@ -165,11 +165,11 @@ useradd -mg wheel <admin>
 passwd <admin> 
 exit
 # login as admin and restrict root login and su to <admin>
-sudo -i -u <admin>
-sudo passwd -l root 
-sudo chown <admin>:wheel /bin/su
+-i -u <admin>
+passwd -l root 
+chown <admin>:wheel /bin/su
 ```
-#####  &nbsp;&nbsp;&nbsp;&nbsp;**Use sudo -i -u adminname when performing admin tasks!*
+#####  &nbsp;&nbsp;&nbsp;&nbsp;**Use -i -u adminname when performing admin tasks!*
 
 &nbsp; 3. Restrict Login Access  
 ```bash
@@ -213,32 +213,32 @@ $pingSweep | Where-Object { $_.Ports -eq “3306” }
 **nmap**
 ```bash
 # basic usage
-sudo nmap <args> <ip_address> 
+nmap <args> <ip_address> 
 
 # scan multiple hosts by using a comma
-sudo nmap 192.168.0.1,8.8.8.8,8.8.4.4
+nmap 192.168.0.1,8.8.8.8,8.8.4.4
 
 # scan whole subnet
-sudo nmap 172.20.201.0/24
+nmap 172.20.201.0/24
 
 # aggressive scan (time consuming)
 # detects OS and services
 
-sudo nmap -A <hosts> 
+nmap -A <hosts> 
 # nmap specific port
 
-sudo nmap -p <port> <host>
+nmap -p <port> <host>
 # nmap range of ports
 
-sudo nmap -p <startport-endport> <host>
+nmap -p <startport-endport> <host>
 # example:
-sudo nmap -p 1-100 192.168.1.254
+nmap -p 1-100 192.168.1.254
 
 #nmap 100 most common ports
-sudo nmap -F <host>
+nmap -F <host>
 
 #Service detection
-sudo nmap -sV <host>
+nmap -sV <host>
 ```
 
 #### Maintaining Services
@@ -469,39 +469,39 @@ find /path/to/file -user <badguy> -delete
 
 **ufw**
 ```bash
-# genral usage
-sudo ufw default <deny/allow> <incoming/outgoing> <port/protocol>
+# general usage
+ufw default <deny/allow> <incoming/outgoing> <port/protocol>
 
 # disable or enable ufw like this
-sudo ufw <enable/disable>
+ufw <enable/disable>
 
 # show rules 
-sudo ufw status
-sudo ufw status numbered
-sudo ufw status verbose
+ufw status
+ufw status numbered
+ufw status verbose
 
 # open ports like this
-sudo ufw allow <port/protocol>
+ufw allow <port/protocol>
 
 # allow ssh over tcp or udp
-sudo ufw allow 22
-sudo ufw allow 22/tcp
-sudo ufw allow 22/udp
+ufw allow 22
+ufw allow 22/tcp
+ufw allow 22/udp
 
 # close ports like this
-sudo ufw deny <port/protocol> 
+ufw deny <port/protocol> 
 
 # deny ssh  
-sudo ufw deny 22/tcp
+ufw deny 22/tcp
 
 # you can also allow or deny services in /etc/services
-sudo ufw <allow/deny> <service name>
+ufw <allow/deny> <service name>
 # example Usage:
-sudo ufw allow ssh
+ufw allow ssh
 
 # you can delete existing rules like this
-sudo ufw delete allow 22/tcp
-sudo ufw delete deny ssh
+ufw delete allow 22/tcp
+ufw delete deny ssh
 
 # you can delete existing rules by number 
 sudu ufw delete <n>
