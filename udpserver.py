@@ -11,6 +11,9 @@ class Verbosity(Enum):
     SOME = 1
     FULL = 2
 
+    def __str__(self):
+        return self.name
+
 def prompt(port):
     reply = "Receiving prompt on port {0}".format(port) 
     return reply
