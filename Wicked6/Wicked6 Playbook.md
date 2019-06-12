@@ -68,15 +68,26 @@ relevant to the competition. Tools should have links to the domains, and techniq
 
 ### System Integrator
 
-* item a
-* item b
-* item c
+* `ping <ip>`
+* `ping -s 9999`
+* `sudo hping3 -1 --icmptype 13 <ip>`
+* `traceroute <ip>`
+* `nmap -sS <ip>`
+* `nmap -sF <ip>`
+* `nmap -sX <ip>`
+* `nmap -sV <ip>`
+* `nmsap -O <ip>`
+* `nmap -sS -p- <ip>` 
+* `nmap --script=vuln <ip>`
+* `nmap --script=smb-enum-shares <ip>`
+* `dig <hostname>`
+* `nslookup <hostname <DNS server ip>>`
 
 ### Network Analyst
 
-* item a
-* item b
-* item c
+* `netstat -an`
+* `cat cisco-cfg.txt | grap password | grep -v "service \|username" | wc -l`
+* `>>>cisco_CLI>>> permit host <ip>`  
 
 ### Intel Analyst
 
