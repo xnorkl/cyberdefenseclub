@@ -66,25 +66,25 @@ relevant to the competition. Tools should have links to the domains, and techniq
 
 ## Circadence
 
-### topic 1
+### System Integrator
 
 * item a
 * item b
 * item c
 
-### topic 2
+### Network Analyst
 
 * item a
 * item b
 * item c
 
-### topic 3
+### Intel Analyst
 
 * item a
 * item b
 * item c
 
-### topic 4
+### Forensics One
 
 * item a
 * item b
