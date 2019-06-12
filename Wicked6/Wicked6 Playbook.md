@@ -80,9 +80,14 @@ relevant to the competition. Tools should have links to the domains, and techniq
 
 ### Intel Analyst
 
-* item a
-* item b
-* item c
+All of these except the last are 100% done in the Maltego interface. The last you just look at the jpeg and find what they ask for.
+1.  Open the file in Maltego -> Find the desired domain (comcast) -> secure.circadence.com
+2.  Open the file in Maltego ->  Find the blog post specified by mousing over nodes on the tree -> grab the source domain -> powermag.com
+3.  Open the file in Maltego -> look through the tree's children to find the source company -> Microsoft
+4.  Open the file in Maltego -> Look through the emails in the tree to find sub-domains -> toronto.circadence.com
+5.  Find the tweet through the tree -> grab the handle from the right sidebar -> epic_joel
+6.  Find the hashtag from the right sidebar -> #opsec
+7.  Open the Jpeg -> use eyes to parse launguages mentions -> Find the one with 4 mentions -> Portuguese
 
 ### Forensics One
 
